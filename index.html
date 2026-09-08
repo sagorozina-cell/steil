@@ -1,48 +1,42 @@
 <!doctype html>
-<html lang="en">
+<html lang="bn">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GlyphCraft — Stylish Name & Unicode Symbol Generator</title>
-    <meta name="description" content="Generate your stylish name now. 14000+ unicode font symbols generator for PUBG, Free Fire, Kaomoji, cool fonts, bios text online for Free!" />
-    <meta name="keywords" content="stylish name, fancy text generator, unicode symbols, free fire name, pubg nickname, kaomoji, zalgo text, bangla stylish name, copy paste font" />
-    <meta property="og:title" content="GlyphCraft — Stylish Name & Unicode Symbol Generator" />
-    <meta property="og:description" content="Generate 200+ unique stylish names, bio fonts, gaming nicknames, and browse 14,000+ Unicode symbols with 1-click instant copy." />
+    
+    <!-- SEO Meta Tags -->
+    <title>Stylish Name Generator - ফ্যান্সি নাম ও সিম্বল তৈরি করুন | ফ্রি</title>
+    <meta name="description" content="বাংলা ও ইংরেজি স্টাইলিশ নাম, গেইমিং নিকনেম (PUBG, Free Fire) এবং ১৪০০০+ ইউনিকোড সিম্বল তৈরি করার সবচেয়ে সহজ অনলাইন টুল।" />
+    <meta name="keywords" content="stylish name, fancy text generator, unicode symbols, free fire name, pubg nickname, bangla stylish font, copy paste font" />
+    <meta property="og:title" content="Stylish Name & Unicode Symbol Generator" />
+    <meta property="og:description" content="এক ক্লিকে ২০০+ ইউনিক স্টাইলিশ নাম, বায়ো ফন্ট এবং গেইমিং নিকনেম তৈরি ও কপি করুন।" />
     <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="theme-color" content="#ffffff" />
-    <link rel="canonical" href="/" />
+    <meta property="og:image" content="assets/images/og-image.png" />
+    <meta name="theme-color" content="#0284c7" />
+    <link rel="canonical" href="https://yourusername.github.io/" />
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
 
-    <!-- Error handler for external third-party script noise -->
-    <script>
-      window.addEventListener('error', function(event) {
-        if (event.message === 'Script error.' || (event.filename && event.filename.indexOf('translate.google') !== -1)) {
-          event.preventDefault();
-          return true;
-        }
-      });
-      window.addEventListener('unhandledrejection', function(event) {
-        if (event.reason && (event.reason.message === 'Script error.' || String(event.reason).indexOf('translate') !== -1)) {
-          event.preventDefault();
-        }
-      });
-    </script>
-
-    <!-- Google Fonts: Multilingual Typography (Outfit, Space Grotesk, Noto Sans suite for Bengali, Devanagari, Arabic, JP, KR, Thai, Cyrillic) -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Sans+KR:wght@400;500;700&family=Noto+Sans+Thai:wght@400;500;600;700&family=Noto+Sans:ital,wght@0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
-    <!-- JSON-LD Structured Data: WebApplication -->
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <!-- Custom CSS Files -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+
+    <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "WebApplication",
-      "name": "GlyphCraft",
-      "url": "https://glyphcraft.app",
+      "name": "Stylish Name Generator",
       "applicationCategory": "UtilitiesApplication",
       "operatingSystem": "All",
-      "description": "Transform ordinary names and text into stylish Unicode fonts, gaming nicknames, kaomoji, and decorative plain-text symbols.",
+      "description": "Transform ordinary names into stylish Unicode fonts and gaming nicknames.",
       "offers": {
         "@type": "Offer",
         "price": "0",
@@ -51,63 +45,212 @@
     }
     </script>
   </head>
-  <body class="bg-white text-slate-900 antialiased selection:bg-cyan-100 selection:text-cyan-900">
-    <div id="root"></div>
-    <!-- Hidden Google Translate Container -->
-    <div id="google_translate_element" style="display: none; visibility: hidden; position: absolute; left: -9999px;"></div>
-    <script type="text/javascript">
-      // 1. Instantly restore saved translation before Google script loads
-      (function() {
-        try {
-          var savedGoogleLang = localStorage.getItem('glyphcraft_user_lang');
-          if (savedGoogleLang && savedGoogleLang !== 'en') {
-            var transPath = '/en/' + savedGoogleLang;
-            document.cookie = 'googtrans=' + transPath + '; path=/;';
-            document.cookie = 'googtrans=' + transPath + '; domain=' + window.location.hostname + '; path=/;';
-            var hostParts = window.location.hostname.split('.');
-            if (hostParts.length > 2) {
-              document.cookie = 'googtrans=' + transPath + '; domain=.' + hostParts.slice(-2).join('.') + '; path=/;';
-            }
-          }
-        } catch(e) {}
+  <body>
 
-        // 2. Prevent Google Translate from adding margin/top or covering header
-        var preventHeaderCover = function() {
-          try {
-            if (document.body && document.body.style && document.body.style.top && document.body.style.top !== '0px') {
-              document.body.style.top = '0px';
-            }
-            if (document.documentElement && document.documentElement.style && document.documentElement.style.top && document.documentElement.style.top !== '0px') {
-              document.documentElement.style.top = '0px';
-            }
-            var frames = document.querySelectorAll('.goog-te-banner-frame, iframe.goog-te-banner-frame, .VIpgJd-ZVi9od-ORHb-OEVmcb');
-            if (frames && frames.length) {
-              frames.forEach(function(el) {
-                if (el && el.style) {
-                  el.style.display = 'none';
-                  el.style.visibility = 'hidden';
-                  el.style.height = '0';
-                }
-              });
-            }
-          } catch(e) {}
-        };
-        setInterval(preventHeaderCover, 500);
-      })();
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+      <span>✨ ১০০০+ নতুন ফ্রি ফায়ার ও PUBG ইউনিকোড সিম্বল যুক্ত করা হয়েছে!</span>
+    </div>
 
-      window.googleTranslateElementInit = function() {
-        try {
-          if (window.google && window.google.translate && window.google.translate.TranslateElement) {
-            new window.google.translate.TranslateElement({
-              pageLanguage: 'en',
-              includedLanguages: 'en,bn,hi,ar,ja,ko,fr,es,ru,de,id,tr,pt,th,it,ur,ta,te,zh-CN',
-              autoDisplay: false
-            }, 'google_translate_element');
-          }
-        } catch(e) {}
-      };
-    </script>
-    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async onerror="console.warn('Translate service deferred')"></script>
-    <script type="module" src="/src/main.tsx"></script>
+    <!-- Header & Navbar -->
+    <header class="navbar">
+      <div class="container navbar-inner">
+        <a href="index.html" class="brand">
+          <div class="brand-icon">✨</div>
+          <div class="brand-text">
+            <h1>StylishName</h1>
+          </div>
+          <span class="brand-badge">PRO</span>
+        </a>
+
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#generator-section" class="nav-btn active"><i class="fa-solid fa-wand-magic-sparkles"></i> <span class="nav-text-hide">জনপ্রিয় স্টাইল</span></a></li>
+            <li><a href="#workbench-section" class="nav-btn"><i class="fa-solid fa-pen-ruler"></i> <span class="nav-text-hide">কাস্টম স্টাইলার</span></a></li>
+            <li><a href="#symbol-section" class="nav-btn"><i class="fa-solid fa-icons"></i> <span class="nav-text-hide">সিম্বল লাইব্রেরি</span></a></li>
+            <li><a href="about.html" class="nav-btn"><i class="fa-solid fa-circle-info"></i> <span class="nav-text-hide">আমাদের সম্পর্কে</span></a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content Body -->
+    <main class="container">
+      
+      <!-- Hero & Input Section -->
+      <section class="hero-section">
+        <h2 class="hero-title">স্টাইলিশ নাম ও ইউনিকোড ফন্ট জেনারেটর</h2>
+        <p class="hero-subtitle">আপনার সাধারণ নামটি লিখুন এবং এক ক্লিকে ২০০+ আকর্ষণীয় ফ্যান্সি ফন্ট ও গেইমিং নিকনেম তৈরি করুন।</p>
+
+        <div class="input-card">
+          <div class="input-box-wrapper">
+            <i class="fa-solid fa-keyboard input-icon"></i>
+            <input type="text" id="main-name-input" class="main-input" placeholder="এখানে আপনার নাম বা টেক্সট লিখুন..." value="King" autocomplete="off" />
+            <button id="clear-input-btn" class="icon-btn" title="মুছে ফেলুন"><i class="fa-solid fa-xmark"></i></button>
+          </div>
+
+          <!-- Quick Samples -->
+          <div class="quick-samples">
+            <span class="quick-label">ট্রাই করুন:</span>
+            <button class="sample-chip" onclick="setSampleName('King')">King</button>
+            <button class="sample-chip" onclick="setSampleName('Pro Player')">Pro Player</button>
+            <button class="sample-chip" onclick="setSampleName('Shadow')">Shadow</button>
+            <button class="sample-chip" onclick="setSampleName('প্রিন্স')">প্রিন্স</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Category Filter Bar -->
+      <div class="category-bar">
+        <button class="category-pill active" data-category="all"><i class="fa-solid fa-border-all"></i> সব স্টাইল</button>
+        <button class="category-pill" data-category="gaming"><i class="fa-solid fa-gamepad"></i> Gaming (FF/PUBG)</button>
+        <button class="category-pill" data-category="royal"><i class="fa-solid fa-crown"></i> Royal & VIP</button>
+        <button class="category-pill" data-category="aesthetic"><i class="fa-solid fa-heart"></i> Aesthetic & Cute</button>
+        <button class="category-pill" data-category="dark"><i class="fa-solid fa-skull"></i> Dark & Bio</button>
+      </div>
+
+      <!-- Generated Results Section -->
+      <section id="generator-section" class="results-section">
+        <div class="section-header">
+          <div class="section-title">
+            <span>জেনারেট হওয়া ফলাফল</span>
+            <span class="results-count" id="result-count">0 স্টাইল</span>
+          </div>
+          <input type="text" id="search-styles-input" class="search-filter" placeholder="স্টাইল খুঁজুন..." />
+        </div>
+
+        <!-- Dynamic Results Grid -->
+        <div class="results-grid" id="results-container">
+          <!-- JS dynamic content will append here -->
+        </div>
+      </section>
+
+      <!-- 3-Part Decoration Workbench -->
+      <section id="workbench-section" class="workbench-section">
+        <div class="section-header">
+          <div class="section-title">
+            <i class="fa-solid fa-sliders"></i> কাস্টম নিকনেম ওয়ার্কবেঞ্চ (বাম/ডান সিম্বল দিয়ে সাজান)
+          </div>
+        </div>
+
+        <div class="workbench-preview-box">
+          <div class="workbench-preview-text" id="workbench-preview">༺Legeոd༻</div>
+          <div class="workbench-actions">
+            <button class="btn-primary" id="copy-workbench-btn"><i class="fa-regular fa-copy"></i> কাস্টম নাম কপি করুন</button>
+          </div>
+        </div>
+
+        <div class="workbench-grid">
+          <!-- Left Wings -->
+          <div class="workbench-column">
+            <div class="workbench-column-title">
+              <span>বাম পাশের সিম্বল (Left)</span>
+            </div>
+            <div class="wing-pills-wrap" id="left-wings-container">
+              <!-- Dynamically populated -->
+            </div>
+          </div>
+
+          <!-- Middle Name Input -->
+          <div class="workbench-column">
+            <div class="workbench-column-title">
+              <span>মাঝের নাম ও ফন্ট</span>
+            </div>
+            <input type="text" id="workbench-text-input" class="center-text-input" value="Legend" />
+            <select id="workbench-font-select" class="font-select">
+              <option value="0">ফন্ট ১: 𝕷𝖊𝖌𝖊𝖓𝖉</option>
+              <option value="1">ফন্ট ২: 𝓛𝓮𝓰𝓮𝓷𝓭</option>
+              <option value="2">ফন্ট ৩: 🇱🇪🇬🇪🇳🇩</option>
+            </select>
+          </div>
+
+          <!-- Right Wings -->
+          <div class="workbench-column">
+            <div class="workbench-column-title">
+              <span>ডান পাশের সিম্বল (Right)</span>
+            </div>
+            <div class="wing-pills-wrap" id="right-wings-container">
+              <!-- Dynamically populated -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Symbol Library Section -->
+      <section id="symbol-section" class="symbol-section">
+        <div class="section-header">
+          <div class="section-title">
+            <i class="fa-solid fa-shapes"></i> ইউনিকোড সিম্বল স্ক্র্যাচপ্যাড (ক্লিক করে নাম তৈরি করুন)
+          </div>
+        </div>
+
+        <div class="scratchpad-box">
+          <div class="scratchpad-display" id="scratchpad-display" placeholder="নিচের সিম্বলগুলোতে ক্লিক করুন..."></div>
+          <div class="scratchpad-actions">
+            <button class="btn-outline" id="clear-scratchpad-btn"><i class="fa-solid fa-trash"></i> ক্লিয়ার</button>
+            <button class="btn-primary" id="copy-scratchpad-btn"><i class="fa-regular fa-copy"></i> টেক্সট কপি করুন</button>
+          </div>
+        </div>
+
+        <!-- Symbol Tabs -->
+        <div class="symbol-tabs" id="symbol-tabs-container">
+          <!-- JS Dynamic Tabs -->
+        </div>
+
+        <!-- Symbols Grid -->
+        <div class="symbols-grid" id="symbols-grid-container">
+          <!-- JS Dynamic Symbols -->
+        </div>
+      </section>
+
+      <!-- SEO Informational Article Section (Needed for AdSense) -->
+      <section class="seo-content-card" style="background:#fff; padding: 2rem; border-radius:16px; border:1px solid #e2e8f0; margin-bottom: 3rem;">
+        <h3 style="font-size: 1.5rem; font-weight:700; margin-bottom:1rem; color:#0f172a;">কিভাবে স্টাইলিশ নাম এবং ফ্যান্সি টেক্সট তৈরি করবেন?</h3>
+        <p style="color:#475569; line-height:1.7; margin-bottom:1rem;">
+          গেইমিং আইডি (যেমন PUBG, Free Fire, Mobile Legends) বা সামাজিক যোগাযোগ মাধ্যমের (Facebook, Instagram, TikTok) প্রোফাইল সুন্দর করতে একটি ইউনিক ও স্টাইলিশ নাম অত্যন্ত গুরুত্বপূর্ণ। আমাদের এই টুলটির মাধ্যমে আপনি খুব সহজেই যেকোনো সাধারণ নামকে ফ্যান্সি ইউনিকোড ফন্ট, কুল সিম্বল এবং ইমোজি দিয়ে আকর্ষণীয় বানিয়ে নিতে পারবেন।
+        </p>
+        <h4 style="font-size: 1.1rem; font-weight:700; margin-bottom:0.5rem; color:#0f172a;">ব্যবহার বিধি:</h4>
+        <ol style="color:#475569; padding-left:1.2rem; line-height:1.7;">
+          <li>উপরের ইনপুট বক্সে আপনার কাঙ্ক্ষিত নামটি টাইপ করুন।</li>
+          <li>নিচে সাথে সাথে ২০০+ ভিন্ন ডিজাইনের নাম তৈরি হয়ে যাবে।</li>
+          <li>পছন্দের ডিজাইনের পাশের <strong>"Copy"</strong> বাটনে ক্লিক করলেই টেক্সটটি ক্লিপবোর্ডে কপি হয়ে যাবে।</li>
+        </ol>
+      </section>
+
+    </main>
+
+    <!-- Toast Notification Container -->
+    <div class="toast-container" id="toast-container"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="brand">
+            <div class="brand-icon">✨</div>
+            <div class="brand-text">
+              <h1>StylishName</h1>
+            </div>
+          </div>
+
+          <ul class="footer-links">
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+            <li><a href="https://yourusername.github.io/policies/privacy-policy.html" target="_blank" class="footer-link">Privacy Policy</a></li>
+            <li><a href="https://yourusername.github.io/policies/terms-and-conditions.html" target="_blank" class="footer-link">Terms & Conditions</a></li>
+            <li><a href="https://yourusername.github.io/policies/disclaimer.html" target="_blank" class="footer-link">Disclaimer</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 StylishName. All rights reserved. Powered by GitHub Pages.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="assets/js/style-data.js"></script>
+    <script src="assets/js/copy.js"></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
