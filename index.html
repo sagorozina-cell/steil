@@ -4,20 +4,23 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- ============ SEO META () ============ -->
+<!-- ============ SEO META ============ -->
 <title>স্টাইলিশ নেম জেনারেটর — ফ্যান্সি ফন্ট ও নিকনেম তৈরি করুন | ফ্রি</title>
 <meta name="description" content="ফ্রি স্টাইলিশ নেম জেনারেটর দিয়ে বাংলা ও ইংরেজি নামের ফ্যান্সি ফন্ট স্টাইল তৈরি করুন। ফেসবুক, ফ্রি ফায়ার, পাবজি, ইনস্টাগ্রামের জন্য ১০০+ ইউনিক নিকনেম — এক ক্লিকে কপি!">
 <meta name="keywords" content="stylish name, fancy text, nickname generator, bangla stylish font, free fire name, facebook stylish name, স্টাইলিশ নাম, ফ্যান্সি ফন্ট">
 <meta name="robots" content="index, follow">
 <meta name="author" content="Stylish Name Generator">
-<link rel="canonical" href="https://yoursite.com/">
+<link rel="canonical" href="https://sagorozina-cell.github.io/steil/">
+
+<!-- External CSS File Link -->
+<link rel="stylesheet" href="style.css">
 
 <!-- Open Graph / Social -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="স্টাইলিশ নেম জেনারেটর — ফ্যান্সি ফন্ট ও নিকনেম তৈরি করুন">
 <meta property="og:description" content="বাংলা ও ইংরেজি নামের জন্য ১০০+ ফ্যান্সি ফন্ট স্টাইল। ফেসবুক, ফ্রি ফায়ার, পাবজি-র জন্য ইউনিক নিকনেম তৈরি করুন — ফ্রি!">
 <meta property="og:image" content="assets/images/og-image.png">
-<meta property="og:url" content="https://github.com/sagorozina-cell/">
+<meta property="og:url" content="https://sagorozina-cell.github.io/steil/">
 <meta property="og:locale" content="bn_BD">
 <meta name="twitter:card" content="summary_large_image">
 
@@ -29,191 +32,19 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-<!-- AdSense: অ্যাপ্রুভালের পর নিচের লাইনটি আনকমেন্ট করে ca-pub আইডি বসান
-<meta name="google-adsense-account" content="ca-pub-XXXXXXXXXXXXXXXX">
--->
-
 <!-- JSON-LD Schema -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebApplication",
   "name": "স্টাইলিশ নেম জেনারেটর",
-  "url": "https://yoursite.com/",
+  "url": "https://sagorozina-cell.github.io/steil/",
   "applicationCategory": "UtilitiesApplication",
   "operatingSystem": "Any",
   "offers": {"@type": "Offer", "price": "0", "priceCurrency": "BDT"},
   "description": "বাংলা ও ইংরেজি নামের জন্য ফ্যান্সি ফন্ট স্টাইল জেনারেটর।"
 }
 </script>
-
-<style>
-/* ================= DESIGN TOKENS ================= */
-:root{
-  --bg:#070a14; --bg-soft:#0d1224; --card:rgba(255,255,255,.045); --card-solid:#10162c;
-  --border:rgba(255,255,255,.1); --text:#eef1ff; --muted:#98a2c3;
-  --nav-bg:rgba(9,12,24,.75);
-  --p1:#7c5cff; --p2:#22d3ee; --p3:#f472b6;
-  --shadow:0 12px 40px rgba(0,0,0,.45);
-}
-[data-theme="light"]{
-  --bg:#f4f6fd; --bg-soft:#ffffff; --card:rgba(255,255,255,.75); --card-solid:#ffffff;
-  --border:rgba(25,32,70,.12); --text:#181f3d; --muted:#5b6588;
-  --nav-bg:rgba(255,255,255,.8);
-  --shadow:0 12px 32px rgba(40,50,110,.12);
-}
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{
-  font-family:'Hind Siliguri','Poppins',system-ui,sans-serif;
-  background:var(--bg); color:var(--text); overflow-x:hidden;
-  transition:background .35s,color .35s;
-}
-::selection{background:#7c5cff66}
-
-/* ================= BACKGROUND ORBS ================= */
-.orb{position:fixed;border-radius:50%;filter:blur(100px);opacity:.45;z-index:0;pointer-events:none;animation:drift 20s ease-in-out infinite alternate}
-.orb1{width:440px;height:440px;background:radial-gradient(circle,#7c5cff77,transparent 70%);top:-140px;left:-120px}
-.orb2{width:380px;height:380px;background:radial-gradient(circle,#22d3ee55,transparent 70%);top:35%;right:-140px;animation-delay:-6s}
-.orb3{width:400px;height:400px;background:radial-gradient(circle,#f472b644,transparent 70%);bottom:-160px;left:30%;animation-delay:-12s}
-@keyframes drift{from{transform:translate(0,0) scale(1)}to{transform:translate(50px,40px) scale(1.12)}}
-main,header,footer{position:relative;z-index:1}
-
-/* ================= LAYOUT ================= */
-.container{max-width:1140px;margin:0 auto;padding:0 20px}
-.section{padding:74px 0}
-
-/* ================= HEADER ================= */
-header{position:sticky;top:0;z-index:60;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);background:var(--nav-bg);border-bottom:1px solid var(--border)}
-.nav{display:flex;align-items:center;justify-content:space-between;height:66px;position:relative}
-.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.18rem;text-decoration:none;color:var(--text);font-family:'Poppins','Hind Siliguri',sans-serif}
-.logo-badge{width:36px;height:36px;border-radius:11px;background:linear-gradient(135deg,var(--p1),var(--p2));display:grid;place-items:center;color:#fff;font-size:1.1rem;font-style:italic;font-weight:800;box-shadow:0 6px 16px #7c5cff55}
-.nav-links{display:flex;align-items:center;gap:26px;list-style:none}
-.nav-links a{color:var(--muted);text-decoration:none;font-size:.95rem;font-weight:500;transition:.2s;position:relative}
-.nav-links a:hover{color:var(--text)}
-.nav-links a::after{content:'';position:absolute;left:0;bottom:-6px;width:0;height:2px;border-radius:2px;background:linear-gradient(90deg,var(--p1),var(--p2));transition:.25s}
-.nav-links a:hover::after{width:100%}
-.nav-tools{display:flex;align-items:center;gap:10px}
-.icon-btn{width:38px;height:38px;border-radius:11px;border:1px solid var(--border);background:var(--card);color:var(--text);font-size:1.05rem;cursor:pointer;transition:.2s;display:grid;place-items:center}
-.icon-btn:hover{border-color:var(--p1);transform:translateY(-2px)}
-#menuBtn{display:none}
-@media(max-width:900px){
-  #menuBtn{display:grid}
-  .nav-links{position:absolute;top:100%;left:-20px;right:-20px;background:var(--bg-soft);flex-direction:column;gap:4px;padding:14px 20px;border-bottom:1px solid var(--border);display:none;box-shadow:var(--shadow)}
-  .nav-links.open{display:flex}
-  .nav-links a{display:block;padding:10px 6px;font-size:1rem}
-}
-
-/* ================= HERO ================= */
-.hero{padding:78px 0 42px;text-align:center}
-.badge-pill{display:inline-flex;align-items:center;gap:8px;padding:7px 18px;border-radius:999px;background:var(--card);border:1px solid var(--border);color:var(--muted);font-size:.88rem;font-weight:500;margin-bottom:22px}
-.badge-pill b{background:linear-gradient(90deg,var(--p1),var(--p2));-webkit-background-clip:text;background-clip:text;color:transparent}
-.hero h1{font-size:clamp(2rem,5.5vw,3.4rem);font-weight:800;line-height:1.2;font-family:'Poppins','Hind Siliguri',sans-serif;margin-bottom:14px}
-.grad-text{background:linear-gradient(90deg,var(--p1),var(--p2),var(--p3));-webkit-background-clip:text;background-clip:text;color:transparent}
-.hero p.sub{color:var(--muted);font-size:clamp(.98rem,2.2vw,1.12rem);max-width:640px;margin:0 auto 34px;line-height:1.7}
-.input-wrap{max-width:660px;margin:0 auto;background:linear-gradient(120deg,var(--p1),var(--p2),var(--p3));padding:2px;border-radius:20px;box-shadow:0 14px 40px #7c5cff33}
-.input-inner{background:var(--card-solid);border-radius:18px;display:flex;align-items:center;gap:10px;padding:8px 10px 8px 20px}
-.input-inner .pen{font-size:1.25rem}
-#nameInput{flex:1;border:none;outline:none;background:transparent;font-size:1.12rem;color:var(--text);padding:12px 0;font-family:inherit;min-width:0}
-#nameInput::placeholder{color:var(--muted)}
-#clearBtn{border:none;background:var(--card);color:var(--muted);width:32px;height:32px;border-radius:50%;cursor:pointer;font-size:.95rem;display:none}
-#clearBtn:hover{color:var(--text)}
-.input-meta{display:flex;justify-content:space-between;max-width:660px;margin:10px auto 0;padding:0 8px;color:var(--muted);font-size:.82rem}
-.hero-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:26px}
-.btn{border:none;border-radius:13px;padding:13px 26px;font-weight:600;font-size:1rem;cursor:pointer;font-family:inherit;transition:.25s;display:inline-flex;align-items:center;gap:8px}
-.btn-primary{background:linear-gradient(90deg,var(--p1),#9d6bff);color:#fff;box-shadow:0 10px 26px #7c5cff55}
-.btn-primary:hover{transform:translateY(-3px);box-shadow:0 14px 34px #7c5cff77}
-.btn-ghost{background:var(--card);border:1px solid var(--border);color:var(--text)}
-.btn-ghost:hover{transform:translateY(-3px);border-color:var(--p2)}
-.chips{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:24px}
-.chip{padding:7px 16px;border-radius:999px;background:var(--card);border:1px solid var(--border);color:var(--muted);font-size:.86rem;cursor:pointer;font-family:inherit;transition:.2s}
-.chip:hover{color:#fff;background:linear-gradient(90deg,var(--p1),var(--p2));border-color:transparent;transform:translateY(-2px)}
-.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:14px;max-width:760px;margin:44px auto 0}
-.stat{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:18px 10px;text-align:center}
-.stat b{display:block;font-size:1.45rem;background:linear-gradient(90deg,var(--p1),var(--p2));-webkit-background-clip:text;background-clip:text;color:transparent;font-family:'Poppins',sans-serif}
-.stat span{color:var(--muted);font-size:.85rem}
-
-/* ================= STYLE EXPLORER ================= */
-.sec-head{text-align:center;margin-bottom:34px}
-.eyebrow{display:inline-block;font-size:.82rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--p2);margin-bottom:10px}
-.sec-head h2{font-size:clamp(1.55rem,3.6vw,2.2rem);font-weight:800;font-family:'Poppins','Hind Siliguri',sans-serif}
-.sec-head p{color:var(--muted);margin-top:10px;max-width:560px;margin-left:auto;margin-right:auto;line-height:1.7}
-.tabs{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-bottom:20px}
-.tab{padding:9px 20px;border-radius:999px;background:var(--card);border:1px solid var(--border);color:var(--muted);cursor:pointer;font-weight:500;font-size:.92rem;transition:.22s;font-family:inherit}
-.tab:hover{color:var(--text);border-color:var(--p1)}
-.tab.active{background:linear-gradient(90deg,var(--p1),var(--p2));color:#fff;border-color:transparent;box-shadow:0 8px 20px #7c5cff44}
-.search-box{max-width:420px;margin:0 auto 12px;position:relative}
-.search-box input{width:100%;padding:12px 16px 12px 42px;border-radius:13px;border:1px solid var(--border);background:var(--card);color:var(--text);font-family:inherit;font-size:.95rem;outline:none;transition:.2s}
-.search-box input:focus{border-color:var(--p1);box-shadow:0 0 0 3px #7c5cff33}
-.search-box::before{content:'🔍';position:absolute;left:14px;top:50%;transform:translateY(-50%);font-size:.9rem;opacity:.7}
-#countLabel{text-align:center;color:var(--muted);font-size:.88rem;margin:14px 0 20px}
-.results{display:grid;grid-template-columns:repeat(auto-fill,minmax(252px,1fr));gap:14px}
-.card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:15px;display:flex;flex-direction:column;gap:10px;transition:.25s;position:relative;overflow:hidden}
-.card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--p1),var(--p2));opacity:0;transition:.25s}
-.card:hover{transform:translateY(-4px);border-color:#7c5cff88;box-shadow:var(--shadow)}
-.card:hover::before{opacity:1}
-.preview{font-size:1.06rem;line-height:1.6;word-break:break-all;min-height:3.2em;user-select:all;cursor:text;flex:1}
-.card-foot{display:flex;align-items:center;justify-content:space-between;gap:8px}
-.style-name{font-size:.78rem;color:var(--muted);display:flex;align-items:center;gap:6px;flex-wrap:wrap}
-.tag-bn{font-size:.66rem;background:#22d3ee22;color:var(--p2);border:1px solid #22d3ee44;padding:1px 7px;border-radius:999px;font-weight:600}
-.copy-btn{background:linear-gradient(90deg,var(--p1),#9d6bff);color:#fff;border:none;border-radius:10px;padding:8px 16px;font-size:.84rem;font-weight:600;cursor:pointer;font-family:inherit;transition:.2s;white-space:nowrap}
-.copy-btn:hover{transform:translateY(-2px);box-shadow:0 8px 18px #7c5cff55}
-.copy-btn.copied{background:linear-gradient(90deg,#10b981,#34d399)}
-.fav-btn{background:none;border:none;font-size:1.15rem;cursor:pointer;color:var(--muted);transition:.2s;line-height:1}
-.fav-btn:hover{transform:scale(1.2)}
-.fav-btn.active{color:#ff5c8a}
-.empty-state{text-align:center;color:var(--muted);padding:50px 20px;grid-column:1/-1}
-.load-more-wrap{text-align:center;margin-top:28px}
-
-/* ================= CONTENT SECTIONS ================= */
-.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
-.step{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:26px 22px;transition:.25s;position:relative}
-.step:hover{transform:translateY(-5px);border-color:#7c5cff66;box-shadow:var(--shadow)}
-.step-num{width:44px;height:44px;border-radius:13px;background:linear-gradient(135deg,var(--p1),var(--p2));display:grid;place-items:center;font-weight:800;font-size:1.15rem;color:#fff;margin-bottom:16px;font-family:'Poppins',sans-serif;box-shadow:0 8px 20px #7c5cff44}
-.step h3{font-size:1.1rem;margin-bottom:8px}
-.step p{color:var(--muted);font-size:.94rem;line-height:1.7}
-.article{max-width:820px;margin:0 auto}
-.article p{color:var(--muted);line-height:1.9;margin-bottom:18px;font-size:1rem}
-.article p b, .article p strong{color:var(--text)}
-.platforms{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin-top:30px}
-.platform{background:var(--card);border:1px solid var(--border);border-radius:15px;padding:18px;transition:.25s}
-.platform:hover{transform:translateY(-4px);border-color:#22d3ee66}
-.platform h4{font-size:.98rem;margin-bottom:6px;display:flex;align-items:center;gap:8px}
-.platform p{color:var(--muted);font-size:.86rem;line-height:1.65;margin:0}
-.faq-list{max-width:800px;margin:0 auto}
-details{background:var(--card);border:1px solid var(--border);border-radius:15px;margin-bottom:12px;overflow:hidden;transition:.25s}
-details[open]{border-color:#7c5cff66}
-summary{padding:17px 20px;cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;font-size:.99rem}
-summary::-webkit-details-marker{display:none}
-summary::after{content:'+';font-size:1.35rem;color:var(--p2);transition:.3s;flex-shrink:0;font-family:'Poppins',sans-serif}
-details[open] summary::after{transform:rotate(45deg)}
-details .faq-a{padding:0 20px 18px;color:var(--muted);line-height:1.8;font-size:.94rem}
-
-/* ================= CONTACT / FOOTER ================= */
-.contact-card{max-width:640px;margin:0 auto;background:var(--card);border:1px solid var(--border);border-radius:20px;padding:36px 28px;text-align:center}
-.contact-card h3{font-size:1.3rem;margin-bottom:10px}
-.contact-card p{color:var(--muted);line-height:1.8;margin-bottom:20px;font-size:.95rem}
-footer{border-top:1px solid var(--border);background:var(--bg-soft);margin-top:40px}
-.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:34px;padding:52px 0 34px}
-@media(max-width:760px){.foot-grid{grid-template-columns:1fr;gap:26px}}
-.foot-grid h4{font-size:1rem;margin-bottom:14px}
-.foot-grid p{color:var(--muted);font-size:.9rem;line-height:1.75}
-.foot-links{list-style:none}
-.foot-links li{margin-bottom:9px}
-.foot-links a{color:var(--muted);text-decoration:none;font-size:.92rem;transition:.2s}
-.foot-links a:hover{color:var(--p2)}
-.foot-bottom{border-top:1px solid var(--border);padding:18px 0;text-align:center;color:var(--muted);font-size:.85rem}
-
-/* ================= TOAST ================= */
-#toast{position:fixed;bottom:26px;left:50%;transform:translate(-50%,90px);background:linear-gradient(90deg,#1b2244,#262e5c);color:#fff;padding:13px 24px;border-radius:13px;z-index:100;opacity:0;transition:.35s cubic-bezier(.2,.9,.3,1.2);box-shadow:0 12px 34px rgba(0,0,0,.45);border:1px solid #7c5cff55;font-size:.93rem;max-width:92vw;text-align:center}
-#toast.show{transform:translate(-50%,0);opacity:1}
-[data-theme="light"] #toast{background:linear-gradient(90deg,#181f3d,#2a3260)}
-
-/* ================= REVEAL ================= */
-.reveal{opacity:0;transform:translateY(26px);transition:opacity .65s ease,transform .65s ease}
-.reveal.visible{opacity:1;transform:none}
-@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
-</style>
 </head>
 <body>
 
@@ -227,9 +58,9 @@ footer{border-top:1px solid var(--border);background:var(--bg-soft);margin-top:4
       <li><a href="#home">হোম</a></li>
       <li><a href="#styles">স্টাইল</a></li>
       <li><a href="#how">কীভাবে ব্যবহার</a></li>
-      <li><a href="#about">সম্পর্কে</a></li>
+      <li><a href="about.html">সম্পর্কে</a></li>
       <li><a href="#faq">FAQ</a></li>
-      <li><a href="#contact">যোগাযোগ</a></li>
+      <li><a href="contact.html">যোগাযোগ</a></li>
     </ul>
     <div class="nav-tools">
       <button class="icon-btn" id="themeToggle" title="থিম পরিবর্তন">☀️</button>
@@ -319,7 +150,7 @@ footer{border-top:1px solid var(--border);background:var(--bg-soft);margin-top:4
   </div>
 </section>
 
-<!-- ================= ABOUT / CONTENT (AdSense-এর জন্য অরিজিনাল লেখা) ================= -->
+<!-- ================= ABOUT ================= -->
 <section class="section" id="about">
   <div class="container article reveal">
     <div class="sec-head">
@@ -368,8 +199,7 @@ footer{border-top:1px solid var(--border);background:var(--bg-soft);margin-top:4
     <div class="contact-card reveal">
       <h3>📩 কোনো প্রশ্ন বা পরামর্শ?</h3>
       <p>নতুন স্টাইল যুক্ত করার অনুরোধ, কোনো সমস্যা রিপোর্ট বা সাধারণ জিজ্ঞাসা — সবকিছুর জন্য আমাদের ইমেইল করুন। আমরা সাধারণত ২৪-৪৮ ঘণ্টার মধ্যে উত্তর দিই।</p>
-      <!-- আপনার আসল ইমেইল বসান -->
-      <a class="btn btn-primary" href="mailto:contact@yoursite.com">✉️ contact@yoursite.com</a>
+      <a class="btn btn-primary" href="contact.html">✉️ যোগাযোগ পেজে যান</a>
     </div>
   </div>
 </section>
@@ -388,18 +218,17 @@ footer{border-top:1px solid var(--border);background:var(--bg-soft);margin-top:4
         <ul class="foot-links">
           <li><a href="#home">হোম</a></li>
           <li><a href="#styles">সব স্টাইল</a></li>
-          <li><a href="#about">আমাদের সম্পর্কে</a></li>
-          <li><a href="#contact">যোগাযোগ</a></li>
+          <li><a href="about.html">আমাদের সম্পর্কে</a></li>
+          <li><a href="contact.html">যোগাযোগ</a></li>
         </ul>
       </div>
       <div>
         <h4>লিগ্যাল পেজ</h4>
-        <!-- ⚠️ নিচের লিংকগুলোতে YOUR-USERNAME পরিবর্তন করে আপনার GitHub ইউজারনেম বসান (policies রিপোর লিংক) -->
         <ul class="foot-links">
-          <li><a href="https://YOUR-USERNAME.github.io/policies/privacy-policy.html">Privacy Policy</a></li>
-          <li><a href="https://YOUR-USERNAME.github.io/policies/terms-and-conditions.html">Terms &amp; Conditions</a></li>
-          <li><a href="https://YOUR-USERNAME.github.io/policies/disclaimer.html">Disclaimer</a></li>
-          <li><a href="https://YOUR-USERNAME.github.io/policies/cookie-policy.html">Cookie Policy</a></li>
+          <li><a href="policies/privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="policies/terms-and-conditions.html">Terms &amp; Conditions</a></li>
+          <li><a href="policies/disclaimer.html">Disclaimer</a></li>
+          <li><a href="policies/cookie-policy.html">Cookie Policy</a></li>
         </ul>
       </div>
     </div>
@@ -410,10 +239,7 @@ footer{border-top:1px solid var(--border);background:var(--bg-soft);margin-top:4
 <div id="toast"></div>
 
 <script>
-/* ================================================================
-   style-data.js — সব ফন্ট স্টাইল ম্যাপিং ডাটা (এই অংশটুকু আলাদা
-   style-data.js ফাইলে সরিয়ে নিতে পারবেন)
-   ================================================================ */
+/* ================= JS LOGIC ================= */
 const UP='ABCDEFGHIJKLMNOPQRSTUVWXYZ', LOW='abcdefghijklmnopqrstuvwxyz', DIG='0123456789';
 
 function mk(o){
@@ -504,7 +330,7 @@ addStyle('অ্যারো টপ','special',comb('\u20D7'));
 addStyle('এসথেটিক ওয়াইড','special',t=>[...tr(t,M.mono)].join(' '));
 addStyle('স্পেসড — Spaced','special',jw(' '));
 
-/* ---- ডেকোরেশন (বাংলা ✅) ---- */
+/* ---- ডেকোরেশন ---- */
 [['রয়্যাল কিং','꧁༒','༒꧂'],
  ['রয়্যাল','꧁','꧂'],
  ['শুটিং স্টার','★彡','彡★'],
@@ -547,7 +373,7 @@ addStyle('স্পেসড — Spaced','special',jw(' '));
  ['ফায়ার 🔥','🔥 ',' 🔥']
 ].forEach(([n,p,s])=>addStyle(n,'deco',wrap(p,s)));
 
-/* ---- সিম্বল জয়েন (বাংলা ✅) ---- */
+/* ---- সিম্বল জয়েন ---- */
 [['ডায়মন্ড জয়েন','✦'],['স্টার জয়েন','★'],['হার্ট জয়েন','♥'],['ক্রাউন জয়েন','♛'],
  ['অ্যারো জয়েন','❥'],['ফ্লাওয়ার জয়েন','✿'],['বোল্ট জয়েন','⚡'],['মিউজিক জয়েন','♪'],
  ['স্পার্কল জয়েন','⊹'],['ফাইটার জয়েন','乂'],['ফ্রি-ফায়ার জয়েন','᭄'],['গ্লিটার জয়েন','☆'],
@@ -555,9 +381,7 @@ addStyle('স্পেসড — Spaced','special',jw(' '));
  ['ফ্লেউর জয়েন','⚜'],['গেমার জয়েন','×͜×'],['ক্রস জয়েন','✞'],['ব্লেজ জয়েন','亗']
 ].forEach(([n,s])=>addStyle(n,'join',jw(s)));
 
-/* ================================================================
-   copy.js — কপি ফাংশনালিটি + টোস্ট
-   ================================================================ */
+/* ---------- কপি ও টোস্ট ---------- */
 function copyText(t){
   if(navigator.clipboard && window.isSecureContext) return navigator.clipboard.writeText(t);
   return new Promise((res,rej)=>{
@@ -576,9 +400,7 @@ function toast(msg){
   toastTimer=setTimeout(()=>el.classList.remove('show'),2200);
 }
 
-/* ================================================================
-   main.js — মূল লজিক: ইনপুট → রেন্ডার → ফিল্টার → ফেভারিট
-   ================================================================ */
+/* ---------- মূল লজিক ---------- */
 const $=id=>document.getElementById(id);
 const inputEl=$('nameInput'), resultsEl=$('results'), countEl=$('countLabel'),
       loadBtn=$('loadMoreBtn'), searchEl=$('searchInput');
