@@ -1,0 +1,164 @@
+/* =========================================================
+   Steil — Stylish Name Generator | responsive.css
+   ========================================================= */
+
+/* ---------- Tablet (max-width: 768px) ---------- */
+@media (max-width: 768px) {
+  :root {
+    --max-width: 100%;
+  }
+
+  .hero {
+    padding: 36px 0 24px;
+  }
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+  .tagline {
+    font-size: .95rem;
+  }
+
+  .tool {
+    padding: 22px 18px;
+    margin-top: -16px;
+  }
+  #nameInput {
+    font-size: 1.05rem;
+    padding: 14px 16px;
+  }
+
+  .content {
+    padding: 24px 20px;
+  }
+  h2 {
+    font-size: 1.3rem;
+  }
+}
+
+/* ---------- Mobile (max-width: 480px) ---------- */
+@media (max-width: 480px) {
+  .container {
+    padding: 0 14px;
+  }
+
+  /* Header: logo + nav compact */
+  .header-inner {
+    height: 56px;
+  }
+  .logo {
+    font-size: 1.2rem;
+  }
+  .site-nav {
+    gap: 14px;
+  }
+  .site-nav a {
+    font-size: .85rem;
+  }
+
+  /* Hero smaller */
+  .hero {
+    padding: 28px 0 20px;
+  }
+  .hero h1 {
+    font-size: 1.35rem;
+  }
+  .tagline {
+    font-size: .88rem;
+  }
+
+  /* Tool compact */
+  .tool {
+    padding: 18px 14px;
+    border-radius: 12px;
+  }
+  #nameInput {
+    font-size: 1rem;
+    padding: 13px 14px;
+  }
+
+  /* Controls stack on small screens */
+  .tool-controls {
+    gap: 12px;
+  }
+  .result-count {
+    margin-left: 0;
+    width: 100%;
+    text-align: left;
+  }
+
+  /* Result card: stack text above button on very small screens */
+  .result-card {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    padding: 12px 14px;
+  }
+  .result-text {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  .btn-copy {
+    width: 100%;
+    padding: 10px;
+    font-size: .92rem;
+  }
+
+  /* Content readable on mobile */
+  .content {
+    padding: 20px 16px;
+    margin-bottom: 28px;
+  }
+  h2 {
+    font-size: 1.2rem;
+    margin: 1.5rem 0 .8rem;
+  }
+  .content p, .content li {
+    font-size: .93rem;
+  }
+  details {
+    padding: 12px 14px;
+  }
+
+  /* Footer nav wraps nicely */
+  .footer-nav {
+    gap: 6px 14px;
+  }
+  .footer-nav a {
+    font-size: .82rem;
+  }
+  .copyright {
+    font-size: .8rem;
+  }
+
+  /* Toast slightly smaller */
+  .copy-toast {
+    bottom: 20px;
+    padding: 10px 22px;
+    font-size: .88rem;
+  }
+}
+
+/* ---------- Very small phones (max-width: 360px) ---------- */
+@media (max-width: 360px) {
+  .hero h1 {
+    font-size: 1.2rem;
+  }
+  .site-nav {
+    gap: 10px;
+  }
+  .site-nav a {
+    font-size: .8rem;
+  }
+  .result-text {
+    font-size: 1rem;
+  }
+}
+
+/* ---------- Reduced motion (accessibility) ---------- */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+    scroll-behavior: auto !important;
+  }
+}
