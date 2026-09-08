@@ -13,7 +13,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:image" content="assets/images/og-image.png" />
     <meta name="theme-color" content="#0284c7" />
-    <link rel="canonical" href="https://yourusername.github.io/" />
+    <link rel="canonical" href="https://sagorozina-cell.github.io/steil/" />
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
 
     <!-- Google Fonts -->
@@ -24,7 +24,7 @@
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-    <!-- Custom CSS Files -->
+    <!-- Relative Paths for CSS Files -->
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
 
@@ -34,6 +34,7 @@
       "@context": "https://schema.org",
       "@type": "WebApplication",
       "name": "Stylish Name Generator",
+      "url": "https://sagorozina-cell.github.io/steil/",
       "applicationCategory": "UtilitiesApplication",
       "operatingSystem": "All",
       "description": "Transform ordinary names into stylish Unicode fonts and gaming nicknames.",
@@ -92,10 +93,10 @@
           <!-- Quick Samples -->
           <div class="quick-samples">
             <span class="quick-label">ট্রাই করুন:</span>
-            <button class="sample-chip" onclick="setSampleName('King')">King</button>
-            <button class="sample-chip" onclick="setSampleName('Pro Player')">Pro Player</button>
-            <button class="sample-chip" onclick="setSampleName('Shadow')">Shadow</button>
-            <button class="sample-chip" onclick="setSampleName('প্রিন্স')">প্রিন্স</button>
+            <button class="sample-chip" onclick="if(typeof setSampleName === 'function') setSampleName('King')">King</button>
+            <button class="sample-chip" onclick="if(typeof setSampleName === 'function') setSampleName('Pro Player')">Pro Player</button>
+            <button class="sample-chip" onclick="if(typeof setSampleName === 'function') setSampleName('Shadow')">Shadow</button>
+            <button class="sample-chip" onclick="if(typeof setSampleName === 'function') setSampleName('প্রিন্স')">প্রিন্স</button>
           </div>
         </div>
       </section>
@@ -121,7 +122,7 @@
 
         <!-- Dynamic Results Grid -->
         <div class="results-grid" id="results-container">
-          <!-- JS dynamic content will append here -->
+          <!-- JS Dynamic Content -->
         </div>
       </section>
 
@@ -147,7 +148,7 @@
               <span>বাম পাশের সিম্বল (Left)</span>
             </div>
             <div class="wing-pills-wrap" id="left-wings-container">
-              <!-- Dynamically populated -->
+              <!-- JS Populated -->
             </div>
           </div>
 
@@ -170,7 +171,7 @@
               <span>ডান পাশের সিম্বল (Right)</span>
             </div>
             <div class="wing-pills-wrap" id="right-wings-container">
-              <!-- Dynamically populated -->
+              <!-- JS Populated -->
             </div>
           </div>
         </div>
@@ -185,7 +186,7 @@
         </div>
 
         <div class="scratchpad-box">
-          <div class="scratchpad-display" id="scratchpad-display" placeholder="নিচের সিম্বলগুলোতে ক্লিক করুন..."></div>
+          <div class="scratchpad-display" id="scratchpad-display"></div>
           <div class="scratchpad-actions">
             <button class="btn-outline" id="clear-scratchpad-btn"><i class="fa-solid fa-trash"></i> ক্লিয়ার</button>
             <button class="btn-primary" id="copy-scratchpad-btn"><i class="fa-regular fa-copy"></i> টেক্সট কপি করুন</button>
@@ -203,7 +204,7 @@
         </div>
       </section>
 
-      <!-- SEO Informational Article Section (Needed for AdSense) -->
+      <!-- SEO Article Section (For Google AdSense) -->
       <section class="seo-content-card" style="background:#fff; padding: 2rem; border-radius:16px; border:1px solid #e2e8f0; margin-bottom: 3rem;">
         <h3 style="font-size: 1.5rem; font-weight:700; margin-bottom:1rem; color:#0f172a;">কিভাবে স্টাইলিশ নাম এবং ফ্যান্সি টেক্সট তৈরি করবেন?</h3>
         <p style="color:#475569; line-height:1.7; margin-bottom:1rem;">
@@ -236,9 +237,9 @@
           <ul class="footer-links">
             <li><a href="about.html" class="footer-link">About Us</a></li>
             <li><a href="contact.html" class="footer-link">Contact</a></li>
-            <li><a href="https://yourusername.github.io/policies/privacy-policy.html" target="_blank" class="footer-link">Privacy Policy</a></li>
-            <li><a href="https://yourusername.github.io/policies/terms-and-conditions.html" target="_blank" class="footer-link">Terms & Conditions</a></li>
-            <li><a href="https://yourusername.github.io/policies/disclaimer.html" target="_blank" class="footer-link">Disclaimer</a></li>
+            <li><a href="policies/privacy-policy.html" target="_blank" class="footer-link">Privacy Policy</a></li>
+            <li><a href="policies/terms-and-conditions.html" target="_blank" class="footer-link">Terms & Conditions</a></li>
+            <li><a href="policies/disclaimer.html" target="_blank" class="footer-link">Disclaimer</a></li>
           </ul>
         </div>
 
@@ -248,9 +249,9 @@
       </div>
     </footer>
 
-    <!-- JavaScript Files -->
-    <script src="assets/js/style-data.js"></script>
-    <script src="assets/js/copy.js"></script>
-    <script src="assets/js/main.js"></script>
+    <!-- Relative Paths for JS Files -->
+    <script src="assets/js/style-data.js" defer></script>
+    <script src="assets/js/copy.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
   </body>
 </html>
