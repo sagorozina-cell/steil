@@ -1,257 +1,691 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="bn">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <!-- SEO Meta Tags -->
-    <title>Stylish Name Generator - ফ্যান্সি নাম ও সিম্বল তৈরি করুন | ফ্রি</title>
-    <meta name="description" content="বাংলা ও ইংরেজি স্টাইলিশ নাম, গেইমিং নিকনেম (PUBG, Free Fire) এবং ১৪০০০+ ইউনিকোড সিম্বল তৈরি করার সবচেয়ে সহজ অনলাইন টুল।" />
-    <meta name="keywords" content="stylish name, fancy text generator, unicode symbols, free fire name, pubg nickname, bangla stylish font, copy paste font" />
-    <meta property="og:title" content="Stylish Name & Unicode Symbol Generator" />
-    <meta property="og:description" content="এক ক্লিকে ২০০+ ইউনিক স্টাইলিশ নাম, বায়ো ফন্ট এবং গেইমিং নিকনেম তৈরি ও কপি করুন।" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="assets/images/og-image.png" />
-    <meta name="theme-color" content="#0284c7" />
-    <link rel="canonical" href="https://sagorozina-cell.github.io/steil/" />
-    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<!-- ============ SEO META () ============ -->
+<title>স্টাইলিশ নেম জেনারেটর — ফ্যান্সি ফন্ট ও নিকনেম তৈরি করুন | ফ্রি</title>
+<meta name="description" content="ফ্রি স্টাইলিশ নেম জেনারেটর দিয়ে বাংলা ও ইংরেজি নামের ফ্যান্সি ফন্ট স্টাইল তৈরি করুন। ফেসবুক, ফ্রি ফায়ার, পাবজি, ইনস্টাগ্রামের জন্য ১০০+ ইউনিক নিকনেম — এক ক্লিকে কপি!">
+<meta name="keywords" content="stylish name, fancy text, nickname generator, bangla stylish font, free fire name, facebook stylish name, স্টাইলিশ নাম, ফ্যান্সি ফন্ট">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Stylish Name Generator">
+<link rel="canonical" href="https://yoursite.com/">
 
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+<!-- Open Graph / Social -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="স্টাইলিশ নেম জেনারেটর — ফ্যান্সি ফন্ট ও নিকনেম তৈরি করুন">
+<meta property="og:description" content="বাংলা ও ইংরেজি নামের জন্য ১০০+ ফ্যান্সি ফন্ট স্টাইল। ফেসবুক, ফ্রি ফায়ার, পাবজি-র জন্য ইউনিক নিকনেম তৈরি করুন — ফ্রি!">
+<meta property="og:image" content="assets/images/og-image.png">
+<meta property="og:url" content="https://github.com/sagorozina-cell/">
+<meta property="og:locale" content="bn_BD">
+<meta name="twitter:card" content="summary_large_image">
 
-    <!-- Relative Paths for CSS Files -->
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/responsive.css" />
+<!-- Favicon -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%237c5cff'/><stop offset='1' stop-color='%2322d3ee'/></linearGradient></defs><rect width='100' height='100' rx='24' fill='url(%23g)'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='serif' font-style='italic' font-weight='bold'>N</text></svg>">
 
-    <!-- JSON-LD Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebApplication",
-      "name": "Stylish Name Generator",
-      "url": "https://sagorozina-cell.github.io/steil/",
-      "applicationCategory": "UtilitiesApplication",
-      "operatingSystem": "All",
-      "description": "Transform ordinary names into stylish Unicode fonts and gaming nicknames.",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD"
-      }
-    }
-    </script>
-  </head>
-  <body>
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <!-- Announcement Bar -->
-    <div class="announcement-bar">
-      <span>✨ ১০০০+ নতুন ফ্রি ফায়ার ও PUBG ইউনিকোড সিম্বল যুক্ত করা হয়েছে!</span>
+<!-- AdSense: অ্যাপ্রুভালের পর নিচের লাইনটি আনকমেন্ট করে ca-pub আইডি বসান
+<meta name="google-adsense-account" content="ca-pub-XXXXXXXXXXXXXXXX">
+-->
+
+<!-- JSON-LD Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "স্টাইলিশ নেম জেনারেটর",
+  "url": "https://yoursite.com/",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any",
+  "offers": {"@type": "Offer", "price": "0", "priceCurrency": "BDT"},
+  "description": "বাংলা ও ইংরেজি নামের জন্য ফ্যান্সি ফন্ট স্টাইল জেনারেটর।"
+}
+</script>
+
+<style>
+/* ================= DESIGN TOKENS ================= */
+:root{
+  --bg:#070a14; --bg-soft:#0d1224; --card:rgba(255,255,255,.045); --card-solid:#10162c;
+  --border:rgba(255,255,255,.1); --text:#eef1ff; --muted:#98a2c3;
+  --nav-bg:rgba(9,12,24,.75);
+  --p1:#7c5cff; --p2:#22d3ee; --p3:#f472b6;
+  --shadow:0 12px 40px rgba(0,0,0,.45);
+}
+[data-theme="light"]{
+  --bg:#f4f6fd; --bg-soft:#ffffff; --card:rgba(255,255,255,.75); --card-solid:#ffffff;
+  --border:rgba(25,32,70,.12); --text:#181f3d; --muted:#5b6588;
+  --nav-bg:rgba(255,255,255,.8);
+  --shadow:0 12px 32px rgba(40,50,110,.12);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Hind Siliguri','Poppins',system-ui,sans-serif;
+  background:var(--bg); color:var(--text); overflow-x:hidden;
+  transition:background .35s,color .35s;
+}
+::selection{background:#7c5cff66}
+
+/* ================= BACKGROUND ORBS ================= */
+.orb{position:fixed;border-radius:50%;filter:blur(100px);opacity:.45;z-index:0;pointer-events:none;animation:drift 20s ease-in-out infinite alternate}
+.orb1{width:440px;height:440px;background:radial-gradient(circle,#7c5cff77,transparent 70%);top:-140px;left:-120px}
+.orb2{width:380px;height:380px;background:radial-gradient(circle,#22d3ee55,transparent 70%);top:35%;right:-140px;animation-delay:-6s}
+.orb3{width:400px;height:400px;background:radial-gradient(circle,#f472b644,transparent 70%);bottom:-160px;left:30%;animation-delay:-12s}
+@keyframes drift{from{transform:translate(0,0) scale(1)}to{transform:translate(50px,40px) scale(1.12)}}
+main,header,footer{position:relative;z-index:1}
+
+/* ================= LAYOUT ================= */
+.container{max-width:1140px;margin:0 auto;padding:0 20px}
+.section{padding:74px 0}
+
+/* ================= HEADER ================= */
+header{position:sticky;top:0;z-index:60;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);background:var(--nav-bg);border-bottom:1px solid var(--border)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:66px;position:relative}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.18rem;text-decoration:none;color:var(--text);font-family:'Poppins','Hind Siliguri',sans-serif}
+.logo-badge{width:36px;height:36px;border-radius:11px;background:linear-gradient(135deg,var(--p1),var(--p2));display:grid;place-items:center;color:#fff;font-size:1.1rem;font-style:italic;font-weight:800;box-shadow:0 6px 16px #7c5cff55}
+.nav-links{display:flex;align-items:center;gap:26px;list-style:none}
+.nav-links a{color:var(--muted);text-decoration:none;font-size:.95rem;font-weight:500;transition:.2s;position:relative}
+.nav-links a:hover{color:var(--text)}
+.nav-links a::after{content:'';position:absolute;left:0;bottom:-6px;width:0;height:2px;border-radius:2px;background:linear-gradient(90deg,var(--p1),var(--p2));transition:.25s}
+.nav-links a:hover::after{width:100%}
+.nav-tools{display:flex;align-items:center;gap:10px}
+.icon-btn{width:38px;height:38px;border-radius:11px;border:1px solid var(--border);background:var(--card);color:var(--text);font-size:1.05rem;cursor:pointer;transition:.2s;display:grid;place-items:center}
+.icon-btn:hover{border-color:var(--p1);transform:translateY(-2px)}
+#menuBtn{display:none}
+@media(max-width:900px){
+  #menuBtn{display:grid}
+  .nav-links{position:absolute;top:100%;left:-20px;right:-20px;background:var(--bg-soft);flex-direction:column;gap:4px;padding:14px 20px;border-bottom:1px solid var(--border);display:none;box-shadow:var(--shadow)}
+  .nav-links.open{display:flex}
+  .nav-links a{display:block;padding:10px 6px;font-size:1rem}
+}
+
+/* ================= HERO ================= */
+.hero{padding:78px 0 42px;text-align:center}
+.badge-pill{display:inline-flex;align-items:center;gap:8px;padding:7px 18px;border-radius:999px;background:var(--card);border:1px solid var(--border);color:var(--muted);font-size:.88rem;font-weight:500;margin-bottom:22px}
+.badge-pill b{background:linear-gradient(90deg,var(--p1),var(--p2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero h1{font-size:clamp(2rem,5.5vw,3.4rem);font-weight:800;line-height:1.2;font-family:'Poppins','Hind Siliguri',sans-serif;margin-bottom:14px}
+.grad-text{background:linear-gradient(90deg,var(--p1),var(--p2),var(--p3));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p.sub{color:var(--muted);font-size:clamp(.98rem,2.2vw,1.12rem);max-width:640px;margin:0 auto 34px;line-height:1.7}
+.input-wrap{max-width:660px;margin:0 auto;background:linear-gradient(120deg,var(--p1),var(--p2),var(--p3));padding:2px;border-radius:20px;box-shadow:0 14px 40px #7c5cff33}
+.input-inner{background:var(--card-solid);border-radius:18px;display:flex;align-items:center;gap:10px;padding:8px 10px 8px 20px}
+.input-inner .pen{font-size:1.25rem}
+#nameInput{flex:1;border:none;outline:none;background:transparent;font-size:1.12rem;color:var(--text);padding:12px 0;font-family:inherit;min-width:0}
+#nameInput::placeholder{color:var(--muted)}
+#clearBtn{border:none;background:var(--card);color:var(--muted);width:32px;height:32px;border-radius:50%;cursor:pointer;font-size:.95rem;display:none}
+#clearBtn:hover{color:var(--text)}
+.input-meta{display:flex;justify-content:space-between;max-width:660px;margin:10px auto 0;padding:0 8px;color:var(--muted);font-size:.82rem}
+.hero-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:26px}
+.btn{border:none;border-radius:13px;padding:13px 26px;font-weight:600;font-size:1rem;cursor:pointer;font-family:inherit;transition:.25s;display:inline-flex;align-items:center;gap:8px}
+.btn-primary{background:linear-gradient(90deg,var(--p1),#9d6bff);color:#fff;box-shadow:0 10px 26px #7c5cff55}
+.btn-primary:hover{transform:translateY(-3px);box-shadow:0 14px 34px #7c5cff77}
+.btn-ghost{background:var(--card);border:1px solid var(--border);color:var(--text)}
+.btn-ghost:hover{transform:translateY(-3px);border-color:var(--p2)}
+.chips{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:24px}
+.chip{padding:7px 16px;border-radius:999px;background:var(--card);border:1px solid var(--border);color:var(--muted);font-size:.86rem;cursor:pointer;font-family:inherit;transition:.2s}
+.chip:hover{color:#fff;background:linear-gradient(90deg,var(--p1),var(--p2));border-color:transparent;transform:translateY(-2px)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:14px;max-width:760px;margin:44px auto 0}
+.stat{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:18px 10px;text-align:center}
+.stat b{display:block;font-size:1.45rem;background:linear-gradient(90deg,var(--p1),var(--p2));-webkit-background-clip:text;background-clip:text;color:transparent;font-family:'Poppins',sans-serif}
+.stat span{color:var(--muted);font-size:.85rem}
+
+/* ================= STYLE EXPLORER ================= */
+.sec-head{text-align:center;margin-bottom:34px}
+.eyebrow{display:inline-block;font-size:.82rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--p2);margin-bottom:10px}
+.sec-head h2{font-size:clamp(1.55rem,3.6vw,2.2rem);font-weight:800;font-family:'Poppins','Hind Siliguri',sans-serif}
+.sec-head p{color:var(--muted);margin-top:10px;max-width:560px;margin-left:auto;margin-right:auto;line-height:1.7}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-bottom:20px}
+.tab{padding:9px 20px;border-radius:999px;background:var(--card);border:1px solid var(--border);color:var(--muted);cursor:pointer;font-weight:500;font-size:.92rem;transition:.22s;font-family:inherit}
+.tab:hover{color:var(--text);border-color:var(--p1)}
+.tab.active{background:linear-gradient(90deg,var(--p1),var(--p2));color:#fff;border-color:transparent;box-shadow:0 8px 20px #7c5cff44}
+.search-box{max-width:420px;margin:0 auto 12px;position:relative}
+.search-box input{width:100%;padding:12px 16px 12px 42px;border-radius:13px;border:1px solid var(--border);background:var(--card);color:var(--text);font-family:inherit;font-size:.95rem;outline:none;transition:.2s}
+.search-box input:focus{border-color:var(--p1);box-shadow:0 0 0 3px #7c5cff33}
+.search-box::before{content:'🔍';position:absolute;left:14px;top:50%;transform:translateY(-50%);font-size:.9rem;opacity:.7}
+#countLabel{text-align:center;color:var(--muted);font-size:.88rem;margin:14px 0 20px}
+.results{display:grid;grid-template-columns:repeat(auto-fill,minmax(252px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:15px;display:flex;flex-direction:column;gap:10px;transition:.25s;position:relative;overflow:hidden}
+.card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--p1),var(--p2));opacity:0;transition:.25s}
+.card:hover{transform:translateY(-4px);border-color:#7c5cff88;box-shadow:var(--shadow)}
+.card:hover::before{opacity:1}
+.preview{font-size:1.06rem;line-height:1.6;word-break:break-all;min-height:3.2em;user-select:all;cursor:text;flex:1}
+.card-foot{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.style-name{font-size:.78rem;color:var(--muted);display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.tag-bn{font-size:.66rem;background:#22d3ee22;color:var(--p2);border:1px solid #22d3ee44;padding:1px 7px;border-radius:999px;font-weight:600}
+.copy-btn{background:linear-gradient(90deg,var(--p1),#9d6bff);color:#fff;border:none;border-radius:10px;padding:8px 16px;font-size:.84rem;font-weight:600;cursor:pointer;font-family:inherit;transition:.2s;white-space:nowrap}
+.copy-btn:hover{transform:translateY(-2px);box-shadow:0 8px 18px #7c5cff55}
+.copy-btn.copied{background:linear-gradient(90deg,#10b981,#34d399)}
+.fav-btn{background:none;border:none;font-size:1.15rem;cursor:pointer;color:var(--muted);transition:.2s;line-height:1}
+.fav-btn:hover{transform:scale(1.2)}
+.fav-btn.active{color:#ff5c8a}
+.empty-state{text-align:center;color:var(--muted);padding:50px 20px;grid-column:1/-1}
+.load-more-wrap{text-align:center;margin-top:28px}
+
+/* ================= CONTENT SECTIONS ================= */
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+.step{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:26px 22px;transition:.25s;position:relative}
+.step:hover{transform:translateY(-5px);border-color:#7c5cff66;box-shadow:var(--shadow)}
+.step-num{width:44px;height:44px;border-radius:13px;background:linear-gradient(135deg,var(--p1),var(--p2));display:grid;place-items:center;font-weight:800;font-size:1.15rem;color:#fff;margin-bottom:16px;font-family:'Poppins',sans-serif;box-shadow:0 8px 20px #7c5cff44}
+.step h3{font-size:1.1rem;margin-bottom:8px}
+.step p{color:var(--muted);font-size:.94rem;line-height:1.7}
+.article{max-width:820px;margin:0 auto}
+.article p{color:var(--muted);line-height:1.9;margin-bottom:18px;font-size:1rem}
+.article p b, .article p strong{color:var(--text)}
+.platforms{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin-top:30px}
+.platform{background:var(--card);border:1px solid var(--border);border-radius:15px;padding:18px;transition:.25s}
+.platform:hover{transform:translateY(-4px);border-color:#22d3ee66}
+.platform h4{font-size:.98rem;margin-bottom:6px;display:flex;align-items:center;gap:8px}
+.platform p{color:var(--muted);font-size:.86rem;line-height:1.65;margin:0}
+.faq-list{max-width:800px;margin:0 auto}
+details{background:var(--card);border:1px solid var(--border);border-radius:15px;margin-bottom:12px;overflow:hidden;transition:.25s}
+details[open]{border-color:#7c5cff66}
+summary{padding:17px 20px;cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;font-size:.99rem}
+summary::-webkit-details-marker{display:none}
+summary::after{content:'+';font-size:1.35rem;color:var(--p2);transition:.3s;flex-shrink:0;font-family:'Poppins',sans-serif}
+details[open] summary::after{transform:rotate(45deg)}
+details .faq-a{padding:0 20px 18px;color:var(--muted);line-height:1.8;font-size:.94rem}
+
+/* ================= CONTACT / FOOTER ================= */
+.contact-card{max-width:640px;margin:0 auto;background:var(--card);border:1px solid var(--border);border-radius:20px;padding:36px 28px;text-align:center}
+.contact-card h3{font-size:1.3rem;margin-bottom:10px}
+.contact-card p{color:var(--muted);line-height:1.8;margin-bottom:20px;font-size:.95rem}
+footer{border-top:1px solid var(--border);background:var(--bg-soft);margin-top:40px}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:34px;padding:52px 0 34px}
+@media(max-width:760px){.foot-grid{grid-template-columns:1fr;gap:26px}}
+.foot-grid h4{font-size:1rem;margin-bottom:14px}
+.foot-grid p{color:var(--muted);font-size:.9rem;line-height:1.75}
+.foot-links{list-style:none}
+.foot-links li{margin-bottom:9px}
+.foot-links a{color:var(--muted);text-decoration:none;font-size:.92rem;transition:.2s}
+.foot-links a:hover{color:var(--p2)}
+.foot-bottom{border-top:1px solid var(--border);padding:18px 0;text-align:center;color:var(--muted);font-size:.85rem}
+
+/* ================= TOAST ================= */
+#toast{position:fixed;bottom:26px;left:50%;transform:translate(-50%,90px);background:linear-gradient(90deg,#1b2244,#262e5c);color:#fff;padding:13px 24px;border-radius:13px;z-index:100;opacity:0;transition:.35s cubic-bezier(.2,.9,.3,1.2);box-shadow:0 12px 34px rgba(0,0,0,.45);border:1px solid #7c5cff55;font-size:.93rem;max-width:92vw;text-align:center}
+#toast.show{transform:translate(-50%,0);opacity:1}
+[data-theme="light"] #toast{background:linear-gradient(90deg,#181f3d,#2a3260)}
+
+/* ================= REVEAL ================= */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .65s ease,transform .65s ease}
+.reveal.visible{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<div class="orb orb1"></div><div class="orb orb2"></div><div class="orb orb3"></div>
+
+<!-- ================= HEADER ================= -->
+<header>
+  <div class="container nav">
+    <a class="logo" href="#home"><span class="logo-badge">N</span> <span>স্টাইলিশ<span class="grad-text">নেম</span></span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">হোম</a></li>
+      <li><a href="#styles">স্টাইল</a></li>
+      <li><a href="#how">কীভাবে ব্যবহার</a></li>
+      <li><a href="#about">সম্পর্কে</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contact">যোগাযোগ</a></li>
+    </ul>
+    <div class="nav-tools">
+      <button class="icon-btn" id="themeToggle" title="থিম পরিবর্তন">☀️</button>
+      <button class="icon-btn" id="menuBtn" title="মেনু">☰</button>
+    </div>
+  </div>
+</header>
+
+<main>
+<!-- ================= HERO ================= -->
+<section class="hero container" id="home">
+  <div class="badge-pill">✨ <b>১০০+ স্টাইল</b> &nbsp;•&nbsp; সম্পূর্ণ ফ্রি &nbsp;•&nbsp; বাংলা সাপোর্ট</div>
+  <h1>স্টাইলিশ <span class="grad-text">নেম</span> জেনারেটর</h1>
+  <p class="sub">আপনার নামকে করুন ইউনিক! ফেসবুক, ফ্রি ফায়ার, পাবজি, ইনস্টাগ্রামের জন্য ফ্যান্সি ফন্ট ও কিউট নিকনেম তৈরি করুন — এক ক্লিকেই কপি।</p>
+
+  <div class="input-wrap">
+    <div class="input-inner">
+      <span class="pen">✒️</span>
+      <input type="text" id="nameInput" maxlength="60" placeholder="আপনার নাম লিখুন... (বাংলা অথবা English)" autocomplete="off">
+      <button id="clearBtn" title="মুছুন">✕</button>
+    </div>
+  </div>
+  <div class="input-meta"><span>কিছু না লিখলে ডেমো টেক্সট দেখানো হবে</span><span><b id="charCount">০</b>/৬০</span></div>
+
+  <div class="hero-actions">
+    <button class="btn btn-primary" id="genBtn">⚡ স্টাইল জেনারেট করুন</button>
+    <button class="btn btn-ghost" id="randomBtn">🎲 র‍্যান্ডম স্টাইল কপি</button>
+  </div>
+
+  <div class="chips" id="chips">
+    <button class="chip">রাহাত</button>
+    <button class="chip">Sneha</button>
+    <button class="chip">রাজু</button>
+    <button class="chip">Ayan</button>
+    <button class="chip">তানিয়া</button>
+    <button class="chip">Rahim</button>
+    <button class="chip">Riya</button>
+    <button class="chip">Army Boy</button>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><b>১০০+</b><span>ফন্ট স্টাইল</span></div>
+    <div class="stat"><b>∞</b><span>ফ্রি ব্যবহার</span></div>
+    <div class="stat"><b>১০০%</b><span>মোবাইল ফ্রেন্ডলি</span></div>
+    <div class="stat"><b>বাংলা</b><span>সাপোর্টেড</span></div>
+  </div>
+</section>
+
+<!-- ================= STYLE EXPLORER ================= -->
+<section class="section" id="styles">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Style Collection</span>
+      <h2>আপনার <span class="grad-text">পছন্দের স্টাইল</span> বেছে নিন</h2>
+      <p>ক্যাটাগরি অনুযায়ী ফিল্টার করুন বা সার্চ করুন। হার্ট বাটনে ক্লিক করে প্রিয় স্টাইল সেভ করে রাখুন।</p>
     </div>
 
-    <!-- Header & Navbar -->
-    <header class="navbar">
-      <div class="container navbar-inner">
-        <a href="index.html" class="brand">
-          <div class="brand-icon">✨</div>
-          <div class="brand-text">
-            <h1>StylishName</h1>
-          </div>
-          <span class="brand-badge">PRO</span>
-        </a>
+    <div class="tabs" id="tabs">
+      <button class="tab active" data-cat="all">সব স্টাইল</button>
+      <button class="tab" data-cat="font">ফ্যান্সি ফন্ট</button>
+      <button class="tab" data-cat="deco">ডেকোরেশন</button>
+      <button class="tab" data-cat="join">সিম্বল জয়েন</button>
+      <button class="tab" data-cat="special">স্পেশাল</button>
+      <button class="tab" data-cat="fav">⭐ প্রিয়</button>
+    </div>
 
-        <nav>
-          <ul class="nav-links">
-            <li><a href="#generator-section" class="nav-btn active"><i class="fa-solid fa-wand-magic-sparkles"></i> <span class="nav-text-hide">জনপ্রিয় স্টাইল</span></a></li>
-            <li><a href="#workbench-section" class="nav-btn"><i class="fa-solid fa-pen-ruler"></i> <span class="nav-text-hide">কাস্টম স্টাইলার</span></a></li>
-            <li><a href="#symbol-section" class="nav-btn"><i class="fa-solid fa-icons"></i> <span class="nav-text-hide">সিম্বল লাইব্রেরি</span></a></li>
-            <li><a href="about.html" class="nav-btn"><i class="fa-solid fa-circle-info"></i> <span class="nav-text-hide">আমাদের সম্পর্কে</span></a></li>
-          </ul>
-        </nav>
+    <div class="search-box"><input type="text" id="searchInput" placeholder="স্টাইল খুঁজুন... (যেমন: royal, হার্ট)"></div>
+    <div id="countLabel"></div>
+    <div class="results" id="results"></div>
+    <div class="load-more-wrap"><button class="btn btn-ghost" id="loadMoreBtn" style="display:none">আরও স্টাইল দেখুন ↓</button></div>
+  </div>
+</section>
+
+<!-- ================= HOW TO USE ================= -->
+<section class="section" id="how" style="background:var(--bg-soft);border-top:1px solid var(--border);border-bottom:1px solid var(--border)">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="eyebrow">How To Use</span>
+      <h2>মাত্র <span class="grad-text">৩টি ধাপে</span> স্টাইলিশ নাম</h2>
+      <p>কোনো রেজিস্ট্রেশন বা অ্যাপ ইনস্টলের ঝামেলা নেই — সরাসরি ব্রাউজারেই সব কাজ।</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><div class="step-num">১</div><h3>নাম লিখুন</h3><p>উপরের বক্সে আপনার নাম বাংলা অথবা English-এ টাইপ করুন। টাইপ করার সাথে সাথেই সব স্টাইল আপডেট হবে।</p></div>
+      <div class="step reveal"><div class="step-num">২</div><h3>স্টাইল বেছে নিন</h3><p>১০০+ ফ্যান্সি ফন্ট, ডেকোরেশন ও সিম্বল স্টাইল থেকে আপনার পছন্দেরটি খুঁজে বের করুন।</p></div>
+      <div class="step reveal"><div class="step-num">৩</div><h3>কপি ও পেস্ট</h3><p>কপি বাটনে ক্লিক করুন, তারপর ফেসবুক, গেম বা যেকোনো অ্যাপে গিয়ে পেস্ট করুন। ব্যাস!</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT / CONTENT (AdSense-এর জন্য অরিজিনাল লেখা) ================= -->
+<section class="section" id="about">
+  <div class="container article reveal">
+    <div class="sec-head">
+      <span class="eyebrow">About</span>
+      <h2>স্টাইলিশ নাম <span class="grad-text">কী ও কেন</span> ব্যবহার করবেন?</h2>
+    </div>
+    <p><b>স্টাইলিশ নাম</b> হলো ইউনিকোড ক্যারেক্টার ও স্পেশাল সিম্বল দিয়ে তৈরি এমন একটি নাম, যা সাধারণ টেক্সটের চেয়ে আলাদা, আকর্ষণীয় ও পার্সোনাল দেখায়। সোশ্যাল মিডিয়া যুগে আপনার নামই আপনার পরিচয় — ফেসবুক প্রোফাইল, ইনস্টাগ্রাম বায়ো, ইউটিউব চ্যানেল কিংবা ফ্রি ফায়ার বা পাবজির মতো গেমে একটি ইউনিক নাম আপনাকে অন্যদের থেকে আলাদা করে চিনিয়ে দেয়।</p>
+    <p>আমাদের <b>স্টাইলিশ নেম জেনারেটর</b> টুলটি ইউনিকোড ম্যাথমেটিক্যাল অ্যালফানিউমেরিক, সার্কেলড, ফ্র্যাকচার (গথিক), স্ক্রিপ্ট এবং শত শত ডেকোরেটিভ সিম্বল ব্যবহার করে আপনার লেখা নামকে রিয়েল-টাইমে বিভিন্ন স্টাইলে রূপান্তর করে। এখানে শুধু English নয় — <b>বাংলা নামের জন্যও</b> রয়েছে বিশেষ ডেকোরেশন স্টাইল, যা দিয়ে বাংলা নামকে সুন্দরভাবে সাজানো যায়।</p>
+    <p>এই টুলে তৈরি করা যেকোনো টেক্সট আসলে সাধারণ ইউনিকোড ক্যারেক্টার, তাই এটি কোনো ছবি বা ফন্ট ফাইল নয় — <b>যেকোনো জায়গায় কপি-পেস্ট</b> করে ব্যবহার করা যায়। কোনো অ্যাকাউন্ট খোলা বা ব্যক্তিগত তথ্য দেওয়ার প্রয়োজন নেই; আপনার টাইপ করা টেক্সট আমরা কোথাও সেভ করি না — সবকিছু আপনার ব্রাউজারেই ঘটে।</p>
+    <div class="platforms">
+      <div class="platform"><h4>📘 ফেসবুক</h4><p>প্রোফাইল নাম, পেজের নাম ও বায়োতে ব্যবহার করুন। সাধারণ ফন্ট স্টাইলগুলো সবচেয়ে ভালো কাজ করে।</p></div>
+      <div class="platform"><h4>🔥 ফ্রি ফায়ার</h4><p>গেমের নিকনেম ও গিল্ড নামে ডেকোরেশন স্টাইল ব্যবহার করে অন্যদের চোখে পড়ুন।</p></div>
+      <div class="platform"><h4>📸 ইনস্টাগ্রাম</h4><p>বায়ো, ক্যাপশন ও হাইলাইট টাইটেলে কিউট সিম্বল স্টাইল দিয়ে প্রোফাইল সাজান।</p></div>
+      <div class="platform"><h4>▶️ ইউটিউব</h4><p>চ্যানেলের নাম ও ভিডিও টাইটেলে বোল্ড বা গথিক স্টাইল ব্যবহার করে ব্র্যান্ডিং করুন।</p></div>
+      <div class="platform"><h4>💬 হোয়াটসঅ্যাপ</h4><p>গ্রুপের নাম ও স্ট্যাটাসে মজার সিম্বল জয়েন স্টাইলগুলো ট্রাই করুন।</p></div>
+      <div class="platform"><h4>🎮 পাবজি / BGMI</h4><p>ক্ল্যান নাম ও নিকনেমে রয়্যাল স্টাইল ব্যবহার করে দলকে আলাদা পরিচয় দিন।</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="section" id="faq" style="background:var(--bg-soft);border-top:1px solid var(--border);border-bottom:1px solid var(--border)">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="eyebrow">FAQ</span>
+      <h2>সাধারণ <span class="grad-text">জিজ্ঞাসা</span></h2>
+    </div>
+    <div class="faq-list reveal">
+      <details><summary>স্টাইলিশ নেম জেনারেটর কীভাবে কাজ করে?</summary><p class="faq-a">আমাদের টুলটি ইউনিকোড স্ট্যান্ডার্ডের বিভিন্ন ক্যারেক্টার সেট (যেমন Mathematical Bold, Script, Fraktur, Circled) ব্যবহার করে আপনার লেখা প্রতিটি অক্ষরকে অন্য একটি ডিজাইনের অক্ষরে রূপান্তর করে। এটি সম্পূর্ণ ব্রাউজারেই ঘটে, তাই খুব দ্রুত এবং নিরাপদ।</p></details>
+      <details><summary>বাংলা নামের জন্য কি স্টাইল কাজ করবে?</summary><p class="faq-a">হ্যাঁ! ইউনিকোডে বাংলা অক্ষরের ফ্যান্সি ভার্সন না থাকায় ফন্ট-টাইপ স্টাইল বাংলায় প্রযোজ্য নয়, তবে আমাদের "ডেকোরেশন" ও "সিম্বল জয়েন" ক্যাটাগরির ৫০+ স্টাইল বাংলা নামের জন্য পুরোপুরি কাজ করে — যেমন: ꧁রাহাত꧂।</p></details>
+      <details><summary>ফেসবুকে কি এই নাম দেওয়া যাবে?</summary><p class="faq-a">বেশিরভাগ ফন্ট স্টাইল ফেসবুক প্রোফাইল নামে সাপোর্ট করে। তবে কিছু বিরল সিম্বল নাও যেতে পারে। নাম না নিলে অন্য কোনো স্টাইল ট্রাই করুন, অথবা বায়ো/ক্যাপশনে ব্যবহার করুন — সেখানে প্রায় সব স্টাইলই কাজ করে।</p></details>
+      <details><summary>ফ্রি ফায়ার / পাবজিতে ব্যবহার করা যাবে?</summary><p class="faq-a">জি, গেমের নিকনেম চেঞ্জ করার সময় এই স্টাইলগুলো পেস্ট করা যায়। তবে সব গেম সব ইউনিকোড সিম্বল সাপোর্ট নাও করতে পারে; কাজ না করলে সিম্পল বোল্ড বা সার্কেল স্টাইল ব্যবহার করে দেখুন।</p></details>
+      <details><summary>কপি করা টেক্সট কোথায় পেস্ট করব?</summary><p class="faq-a">যেকোনো টেক্সট ইনপুট ফিল্ডে — ফেসবুক, হোয়াটসঅ্যাপ, ইনস্টাগ্রাম, টিকটক, গেম, মেসেজিং অ্যাপ, এমনকি মাইক্রোসফট ওয়ার্ডেও। এটি সাধারণ টেক্সটের মতোই কাজ করে।</p></details>
+      <details><summary>টুলটি ব্যবহারে কি টাকা লাগে?</summary><p class="faq-a">একদম না! এই টুলটি সম্পূর্ণ ফ্রি এবং আনলিমিটেড। কোনো রেজিস্ট্রেশন, লগইন বা পেমেন্টের প্রয়োজন নেই।</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="section" id="contact">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Contact</span>
+      <h2><span class="grad-text">যোগাযোগ</span> করুন</h2>
+    </div>
+    <div class="contact-card reveal">
+      <h3>📩 কোনো প্রশ্ন বা পরামর্শ?</h3>
+      <p>নতুন স্টাইল যুক্ত করার অনুরোধ, কোনো সমস্যা রিপোর্ট বা সাধারণ জিজ্ঞাসা — সবকিছুর জন্য আমাদের ইমেইল করুন। আমরা সাধারণত ২৪-৪৮ ঘণ্টার মধ্যে উত্তর দিই।</p>
+      <!-- আপনার আসল ইমেইল বসান -->
+      <a class="btn btn-primary" href="mailto:contact@yoursite.com">✉️ contact@yoursite.com</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <a class="logo" href="#home" style="margin-bottom:14px"><span class="logo-badge">N</span> <span>স্টাইলিশ<span class="grad-text">নেম</span></span></a>
+        <p>বাংলা ও ইংরেজি নামের জন্য ফ্রি ফ্যান্সি ফন্ট ও স্টাইলিশ নিকনেম জেনারেটর। সোশ্যাল মিডিয়া ও গেমিংয়ের জন্য ১০০+ ইউনিক স্টাইল — সম্পূর্ণ ফ্রি।</p>
       </div>
-    </header>
-
-    <!-- Main Content Body -->
-    <main class="container">
-      
-      <!-- Hero & Input Section -->
-      <section class="hero-section">
-        <h2 class="hero-title">স্টাইলিশ নাম ও ইউনিকোড ফন্ট জেনারেটর</h2>
-        <p class="hero-subtitle">আপনার সাধারণ নামটি লিখুন এবং এক ক্লিকে ২০০+ আকর্ষণীয় ফ্যান্সি ফন্ট ও গেইমিং নিকনেম তৈরি করুন।</p>
-
-        <div class="input-card">
-          <div class="input-box-wrapper">
-            <i class="fa-solid fa-keyboard input-icon"></i>
-            <input type="text" id="main-name-input" class="main-input" placeholder="এখানে আপনার নাম বা টেক্সট লিখুন..." value="King" autocomplete="off" />
-            <button id="clear-input-btn" class="icon-btn" title="মুছে ফেলুন"><i class="fa-solid fa-xmark"></i></button>
-          </div>
-
-          <!-- Quick Samples -->
-          <div class="quick-samples">
-            <span class="quick-label">ট্রাই করুন:</span>
-            <button class="sample-chip" onclick="if(typeof setSampleName === 'function') setSampleName('King')">King</button>
-            <button class="sample-chip" onclick="if(typeof setSampleName === 'function') setSampleName('Pro Player')">Pro Player</button>
-            <button class="sample-chip" onclick="if(typeof setSampleName === 'function') setSampleName('Shadow')">Shadow</button>
-            <button class="sample-chip" onclick="if(typeof setSampleName === 'function') setSampleName('প্রিন্স')">প্রিন্স</button>
-          </div>
-        </div>
-      </section>
-
-      <!-- Category Filter Bar -->
-      <div class="category-bar">
-        <button class="category-pill active" data-category="all"><i class="fa-solid fa-border-all"></i> সব স্টাইল</button>
-        <button class="category-pill" data-category="gaming"><i class="fa-solid fa-gamepad"></i> Gaming (FF/PUBG)</button>
-        <button class="category-pill" data-category="royal"><i class="fa-solid fa-crown"></i> Royal & VIP</button>
-        <button class="category-pill" data-category="aesthetic"><i class="fa-solid fa-heart"></i> Aesthetic & Cute</button>
-        <button class="category-pill" data-category="dark"><i class="fa-solid fa-skull"></i> Dark & Bio</button>
+      <div>
+        <h4>দ্রুত লিংক</h4>
+        <ul class="foot-links">
+          <li><a href="#home">হোম</a></li>
+          <li><a href="#styles">সব স্টাইল</a></li>
+          <li><a href="#about">আমাদের সম্পর্কে</a></li>
+          <li><a href="#contact">যোগাযোগ</a></li>
+        </ul>
       </div>
-
-      <!-- Generated Results Section -->
-      <section id="generator-section" class="results-section">
-        <div class="section-header">
-          <div class="section-title">
-            <span>জেনারেট হওয়া ফলাফল</span>
-            <span class="results-count" id="result-count">0 স্টাইল</span>
-          </div>
-          <input type="text" id="search-styles-input" class="search-filter" placeholder="স্টাইল খুঁজুন..." />
-        </div>
-
-        <!-- Dynamic Results Grid -->
-        <div class="results-grid" id="results-container">
-          <!-- JS Dynamic Content -->
-        </div>
-      </section>
-
-      <!-- 3-Part Decoration Workbench -->
-      <section id="workbench-section" class="workbench-section">
-        <div class="section-header">
-          <div class="section-title">
-            <i class="fa-solid fa-sliders"></i> কাস্টম নিকনেম ওয়ার্কবেঞ্চ (বাম/ডান সিম্বল দিয়ে সাজান)
-          </div>
-        </div>
-
-        <div class="workbench-preview-box">
-          <div class="workbench-preview-text" id="workbench-preview">༺Legeոd༻</div>
-          <div class="workbench-actions">
-            <button class="btn-primary" id="copy-workbench-btn"><i class="fa-regular fa-copy"></i> কাস্টম নাম কপি করুন</button>
-          </div>
-        </div>
-
-        <div class="workbench-grid">
-          <!-- Left Wings -->
-          <div class="workbench-column">
-            <div class="workbench-column-title">
-              <span>বাম পাশের সিম্বল (Left)</span>
-            </div>
-            <div class="wing-pills-wrap" id="left-wings-container">
-              <!-- JS Populated -->
-            </div>
-          </div>
-
-          <!-- Middle Name Input -->
-          <div class="workbench-column">
-            <div class="workbench-column-title">
-              <span>মাঝের নাম ও ফন্ট</span>
-            </div>
-            <input type="text" id="workbench-text-input" class="center-text-input" value="Legend" />
-            <select id="workbench-font-select" class="font-select">
-              <option value="0">ফন্ট ১: 𝕷𝖊𝖌𝖊𝖓𝖉</option>
-              <option value="1">ফন্ট ২: 𝓛𝓮𝓰𝓮𝓷𝓭</option>
-              <option value="2">ফন্ট ৩: 🇱🇪🇬🇪🇳🇩</option>
-            </select>
-          </div>
-
-          <!-- Right Wings -->
-          <div class="workbench-column">
-            <div class="workbench-column-title">
-              <span>ডান পাশের সিম্বল (Right)</span>
-            </div>
-            <div class="wing-pills-wrap" id="right-wings-container">
-              <!-- JS Populated -->
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Symbol Library Section -->
-      <section id="symbol-section" class="symbol-section">
-        <div class="section-header">
-          <div class="section-title">
-            <i class="fa-solid fa-shapes"></i> ইউনিকোড সিম্বল স্ক্র্যাচপ্যাড (ক্লিক করে নাম তৈরি করুন)
-          </div>
-        </div>
-
-        <div class="scratchpad-box">
-          <div class="scratchpad-display" id="scratchpad-display"></div>
-          <div class="scratchpad-actions">
-            <button class="btn-outline" id="clear-scratchpad-btn"><i class="fa-solid fa-trash"></i> ক্লিয়ার</button>
-            <button class="btn-primary" id="copy-scratchpad-btn"><i class="fa-regular fa-copy"></i> টেক্সট কপি করুন</button>
-          </div>
-        </div>
-
-        <!-- Symbol Tabs -->
-        <div class="symbol-tabs" id="symbol-tabs-container">
-          <!-- JS Dynamic Tabs -->
-        </div>
-
-        <!-- Symbols Grid -->
-        <div class="symbols-grid" id="symbols-grid-container">
-          <!-- JS Dynamic Symbols -->
-        </div>
-      </section>
-
-      <!-- SEO Article Section (For Google AdSense) -->
-      <section class="seo-content-card" style="background:#fff; padding: 2rem; border-radius:16px; border:1px solid #e2e8f0; margin-bottom: 3rem;">
-        <h3 style="font-size: 1.5rem; font-weight:700; margin-bottom:1rem; color:#0f172a;">কিভাবে স্টাইলিশ নাম এবং ফ্যান্সি টেক্সট তৈরি করবেন?</h3>
-        <p style="color:#475569; line-height:1.7; margin-bottom:1rem;">
-          গেইমিং আইডি (যেমন PUBG, Free Fire, Mobile Legends) বা সামাজিক যোগাযোগ মাধ্যমের (Facebook, Instagram, TikTok) প্রোফাইল সুন্দর করতে একটি ইউনিক ও স্টাইলিশ নাম অত্যন্ত গুরুত্বপূর্ণ। আমাদের এই টুলটির মাধ্যমে আপনি খুব সহজেই যেকোনো সাধারণ নামকে ফ্যান্সি ইউনিকোড ফন্ট, কুল সিম্বল এবং ইমোজি দিয়ে আকর্ষণীয় বানিয়ে নিতে পারবেন।
-        </p>
-        <h4 style="font-size: 1.1rem; font-weight:700; margin-bottom:0.5rem; color:#0f172a;">ব্যবহার বিধি:</h4>
-        <ol style="color:#475569; padding-left:1.2rem; line-height:1.7;">
-          <li>উপরের ইনপুট বক্সে আপনার কাঙ্ক্ষিত নামটি টাইপ করুন।</li>
-          <li>নিচে সাথে সাথে ২০০+ ভিন্ন ডিজাইনের নাম তৈরি হয়ে যাবে।</li>
-          <li>পছন্দের ডিজাইনের পাশের <strong>"Copy"</strong> বাটনে ক্লিক করলেই টেক্সটটি ক্লিপবোর্ডে কপি হয়ে যাবে।</li>
-        </ol>
-      </section>
-
-    </main>
-
-    <!-- Toast Notification Container -->
-    <div class="toast-container" id="toast-container"></div>
-
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-content">
-          <div class="brand">
-            <div class="brand-icon">✨</div>
-            <div class="brand-text">
-              <h1>StylishName</h1>
-            </div>
-          </div>
-
-          <ul class="footer-links">
-            <li><a href="about.html" class="footer-link">About Us</a></li>
-            <li><a href="contact.html" class="footer-link">Contact</a></li>
-            <li><a href="policies/privacy-policy.html" target="_blank" class="footer-link">Privacy Policy</a></li>
-            <li><a href="policies/terms-and-conditions.html" target="_blank" class="footer-link">Terms & Conditions</a></li>
-            <li><a href="policies/disclaimer.html" target="_blank" class="footer-link">Disclaimer</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-bottom">
-          <p>© 2026 StylishName. All rights reserved. Powered by GitHub Pages.</p>
-        </div>
+      <div>
+        <h4>লিগ্যাল পেজ</h4>
+        <!-- ⚠️ নিচের লিংকগুলোতে YOUR-USERNAME পরিবর্তন করে আপনার GitHub ইউজারনেম বসান (policies রিপোর লিংক) -->
+        <ul class="foot-links">
+          <li><a href="https://YOUR-USERNAME.github.io/policies/privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="https://YOUR-USERNAME.github.io/policies/terms-and-conditions.html">Terms &amp; Conditions</a></li>
+          <li><a href="https://YOUR-USERNAME.github.io/policies/disclaimer.html">Disclaimer</a></li>
+          <li><a href="https://YOUR-USERNAME.github.io/policies/cookie-policy.html">Cookie Policy</a></li>
+        </ul>
       </div>
-    </footer>
+    </div>
+    <div class="foot-bottom">© <span id="year"></span> স্টাইলিশ নেম জেনারেটর — সর্বস্বত্ব সংরক্ষিত। Made with 💜 for Bangladesh.</div>
+  </div>
+</footer>
 
-    <!-- Relative Paths for JS Files -->
-    <script src="assets/js/style-data.js" defer></script>
-    <script src="assets/js/copy.js" defer></script>
-    <script src="assets/js/main.js" defer></script>
-  </body>
+<div id="toast"></div>
+
+<script>
+/* ================================================================
+   style-data.js — সব ফন্ট স্টাইল ম্যাপিং ডাটা (এই অংশটুকু আলাদা
+   style-data.js ফাইলে সরিয়ে নিতে পারবেন)
+   ================================================================ */
+const UP='ABCDEFGHIJKLMNOPQRSTUVWXYZ', LOW='abcdefghijklmnopqrstuvwxyz', DIG='0123456789';
+
+function mk(o){
+  const m={}, {U,L,D,eu={},el={},ed={}}=o;
+  for(let i=0;i<26;i++){
+    m[UP[i]] = eu[UP[i]] ?? (U!=null?String.fromCodePoint(U+i):UP[i]);
+    m[LOW[i]] = el[LOW[i]] ?? (L!=null?String.fromCodePoint(L+i):LOW[i]);
+  }
+  for(let i=0;i<10;i++) m[DIG[i]] = ed[DIG[i]] ?? (D!=null?String.fromCodePoint(D+i):DIG[i]);
+  return m;
+}
+function fromMap(pairs){const m={};pairs.forEach(([k,v])=>m[k]=v);return m;}
+const tr=(t,m)=>[...t].map(c=>m[c]||c).join('');
+
+const M={};
+M.bold        = mk({U:0x1D400,L:0x1D41A,D:0x1D7CE});
+M.italic      = mk({U:0x1D434,L:0x1D44E,eu:{h:'ℎ'}});
+M.boldItalic  = mk({U:0x1D468,L:0x1D482,D:0x1D7D8});
+M.script      = mk({U:0x1D49C,L:0x1D4B6,eu:{B:'ℬ',E:'ℰ',F:'ℱ',H:'ℋ',I:'ℐ',L:'ℒ',M:'ℳ',R:'ℛ'},el:{e:'ℯ',g:'ℊ',o:'ℴ'}});
+M.boldScript  = mk({U:0x1D4D0,L:0x1D4EA,D:0x1D7EC});
+M.fraktur     = mk({U:0x1D504,L:0x1D51E,eu:{C:'ℭ',H:'ℌ',I:'ℑ',R:'ℜ',Z:'ℨ'}});
+M.boldFraktur = mk({U:0x1D56C,L:0x1D586});
+M.double      = mk({U:0x1D538,L:0x1D552,D:0x1D7D8,eu:{C:'ℂ',H:'ℍ',N:'ℕ',P:'ℙ',Q:'ℚ',R:'ℝ',Z:'ℤ'}});
+M.sans        = mk({U:0x1D5A0,L:0x1D5BA,D:0x1D7E2});
+M.sansBold    = mk({U:0x1D5D4,L:0x1D5EE,D:0x1D7EC});
+M.sansItalic  = mk({U:0x1D608,L:0x1D622});
+M.sansBoldItalic = mk({U:0x1D63C,L:0x1D656});
+M.mono        = mk({U:0xFF21,L:0xFF41,D:0xFF10});
+M.circled     = mk({U:0x24B6,L:0x24D0,ed:{'0':'⓪','1':'①','2':'②','3':'③','4':'④','5':'⑤','6':'⑥','7':'⑦','8':'⑧','9':'⑨'}});
+M.negCircled  = mk({U:0x1F150,L:0x1F150,ed:{'0':'⓿','1':'❶','2':'❷','3':'❸','4':'❹','5':'❺','6':'❻','7':'❼','8':'❽','9':'❾'}});
+M.squared     = mk({U:0x1F130,L:0x1F130});
+M.negSquared  = mk({U:0x1F170,L:0x1F170});
+M.paren       = mk({U:0x1F110,L:0x249C,ed:{'1':'⑴','2':'⑵','3':'⑶','4':'⑷','5':'⑸','6':'⑹','7':'⑺','8':'⑻','9':'⑼'}});
+M.regional    = mk({U:0x1F1E6,L:0x1F1E6});
+
+const SMALL_CAPS = fromMap([['a','ᴀ'],['b','ʙ'],['c','ᴄ'],['d','ᴅ'],['e','ᴇ'],['f','ꜰ'],['g','ɢ'],['h','ʜ'],['i','ɪ'],['j','ᴊ'],['k','ᴋ'],['l','ʟ'],['m','ᴍ'],['n','ɴ'],['o','ᴏ'],['p','ᴘ'],['q','ǫ'],['r','ʀ'],['s','ꜱ'],['t','ᴛ'],['u','ᴜ'],['v','ᴠ'],['w','ᴡ'],['x','x'],['y','ʏ'],['z','ᴢ'],['A','ᴀ'],['B','ʙ'],['C','ᴄ'],['D','ᴅ'],['E','ᴇ'],['F','ꜰ'],['G','ɢ'],['H','ʜ'],['I','ɪ'],['J','ᴊ'],['K','ᴋ'],['L','ʟ'],['M','ᴍ'],['N','ɴ'],['O','ᴏ'],['P','ᴘ'],['Q','ǫ'],['R','ʀ'],['S','ꜱ'],['T','ᴛ'],['U','ᴜ'],['V','ᴠ'],['W','ᴡ'],['X','x'],['Y','ʏ'],['Z','ᴢ']]);
+
+const SUP = fromMap([['a','ᵃ'],['b','ᵇ'],['c','ᶜ'],['d','ᵈ'],['e','ᵉ'],['f','ᶠ'],['g','ᵍ'],['h','ʰ'],['i','ⁱ'],['j','ʲ'],['k','ᵏ'],['l','ˡ'],['m','ᵐ'],['n','ⁿ'],['o','ᵒ'],['p','ᵖ'],['q','ᑫ'],['r','ʳ'],['s','ˢ'],['t','ᵗ'],['u','ᵘ'],['v','ᵛ'],['w','ʷ'],['x','ˣ'],['y','ʸ'],['z','ᶻ'],['A','ᴬ'],['B','ᴮ'],['C','ᶜ'],['D','ᴰ'],['E','ᴱ'],['F','ᶠ'],['G','ᴳ'],['H','ᴴ'],['I','ᴵ'],['J','ᴶ'],['K','ᴷ'],['L','ᴸ'],['M','ᴹ'],['N','ᴺ'],['O','ᴼ'],['P','ᴾ'],['Q','ᑫ'],['R','ᴿ'],['S','ˢ'],['T','ᵀ'],['U','ᵁ'],['V','ⱽ'],['W','ᵂ'],['X','ˣ'],['Y','ʸ'],['Z','ᶻ'],['0','⁰'],['1','¹'],['2','²'],['3','³'],['4','⁴'],['5','⁵'],['6','⁶'],['7','⁷'],['8','⁸'],['9','⁹']]);
+
+const SUB = fromMap([['a','ₐ'],['e','ₑ'],['h','ₕ'],['i','ᵢ'],['j','ⱼ'],['k','ₖ'],['l','ₗ'],['m','ₘ'],['n','ₙ'],['o','ₒ'],['p','ₚ'],['r','ᵣ'],['s','ₛ'],['t','ₜ'],['u','ᵤ'],['v','ᵥ'],['x','ₓ'],['0','₀'],['1','₁'],['2','₂'],['3','₃'],['4','₄'],['5','₅'],['6','₆'],['7','₇'],['8','₈'],['9','₉']]);
+
+const FLIP = fromMap([['a','ɐ'],['b','q'],['c','ɔ'],['d','p'],['e','ǝ'],['f','ɟ'],['g','ƃ'],['h','ɥ'],['i','ᴉ'],['j','ɾ'],['k','ʞ'],['l','ן'],['m','ɯ'],['n','u'],['o','o'],['p','d'],['q','b'],['r','ɹ'],['s','s'],['t','ʇ'],['u','n'],['v','ʌ'],['w','ʍ'],['x','x'],['y','ʎ'],['z','z'],['A','∀'],['B','ᗺ'],['C','Ɔ'],['D','ᗡ'],['E','Ǝ'],['F','Ⅎ'],['G','⅁'],['H','H'],['I','I'],['J','ſ'],['K','ʞ'],['L','˥'],['M','W'],['N','N'],['O','O'],['P','Ԁ'],['Q','Ό'],['R','ᴚ'],['S','S'],['T','⊥'],['U','∩'],['V','Λ'],['W','M'],['X','X'],['Y','⅄'],['Z','Z'],['0','0'],['1','Ɩ'],['2','ᄅ'],['3','Ɛ'],['4','ㄣ'],['5','ϛ'],['6','9'],['7','ㄥ'],['8','8'],['9','6'],['.','˙'],[',',"'"],["'",','],['?','¿'],['!','¡'],['[',']'],[']','['],['(',')'],['<','>'],['&','⅋'],['_','‾']]);
+
+const MIRROR = fromMap([['a','ɒ'],['b','d'],['c','ɔ'],['d','b'],['e','ɘ'],['f','ꟻ'],['g','ǫ'],['h','ʜ'],['i','i'],['j','ꞁ'],['k','ʞ'],['l','l'],['m','m'],['n','n'],['o','o'],['p','q'],['q','p'],['r','ɿ'],['s','ꙅ'],['t','ƚ'],['u','u'],['v','v'],['w','w'],['x','x'],['y','y'],['z','z'],['A','A'],['B','ᙠ'],['C','Ɔ'],['D','ᗡ'],['E','Ǝ'],['F','ꟻ'],['G','Ә'],['H','H'],['I','I'],['J','Ⴑ'],['K','ꓘ'],['L','⅃'],['M','M'],['N','И'],['O','O'],['P','ꟼ'],['Q','Ϙ'],['R','Я'],['S','Ꙅ'],['T','T'],['U','U'],['V','V'],['W','W'],['X','X'],['Y','Y'],['Z','Ƹ']]);
+
+/* ---------- স্টাইল রেজিস্ট্রি ---------- */
+const STYLES=[]; let _id=0;
+function addStyle(n,cat,g){STYLES.push({id:'s'+(_id++),n,cat,g});}
+const wrap=(p,s)=>t=>p+t+s;
+const comb=mark=>t=>[...t].map(c=>c+mark).join('');
+const jw=s=>t=>[...t].join(s);
+
+/* ---- ফ্যান্সি ফন্ট (English) ---- */
+addStyle('বোল্ড — Bold','font',t=>tr(t,M.bold));
+addStyle('ইটালিক — Italic','font',t=>tr(t,M.italic));
+addStyle('বোল্ড ইটালিক','font',t=>tr(t,M.boldItalic));
+addStyle('স্ক্রিপ্ট — Cursive','font',t=>tr(t,M.script));
+addStyle('বোল্ড স্ক্রিপ্ট','font',t=>tr(t,M.boldScript));
+addStyle('গথিক — Fraktur','font',t=>tr(t,M.fraktur));
+addStyle('বোল্ড গথিক','font',t=>tr(t,M.boldFraktur));
+addStyle('আউটলাইন — Double','font',t=>tr(t,M.double));
+addStyle('সানস-সেরিফ','font',t=>tr(t,M.sans));
+addStyle('সানস বোল্ড','font',t=>tr(t,M.sansBold));
+addStyle('সানস ইটালিক','font',t=>tr(t,M.sansItalic));
+addStyle('সানস বোল্ড ইটালিক','font',t=>tr(t,M.sansBoldItalic));
+addStyle('মনোস্পেস — Monospace','font',t=>tr(t,M.mono));
+addStyle('স্মল ক্যাপস','font',t=>tr(t,SMALL_CAPS));
+addStyle('বাবল — Circled','font',t=>tr(t,M.circled));
+addStyle('ডার্ক বাবল','font',t=>tr(t,M.negCircled));
+addStyle('স্কয়ার — Squared','font',t=>tr(t,M.squared));
+addStyle('ডার্ক স্কয়ার','font',t=>tr(t,M.negSquared));
+addStyle('ব্র্যাকেট — Paren','font',t=>tr(t,M.paren));
+addStyle('সুপারস্ক্রিপ্ট','font',t=>tr(t,SUP));
+addStyle('সাবস্ক্রিপ্ট','font',t=>tr(t,SUB));
+addStyle('উল্টা — Upside Down','font',t=>[...tr(t,FLIP)].reverse().join(''));
+addStyle('মিরর — Mirror','font',t=>[...tr(t,MIRROR)].reverse().join(''));
+addStyle('ফ্ল্যাগ লেটার্স','font',t=>tr(t,M.regional));
+
+/* ---- স্পেশাল ---- */
+addStyle('স্ট্রাইকথ্রু','special',comb('\u0336'));
+addStyle('আন্ডারলাইন','special',comb('\u0332'));
+addStyle('ওভারলাইন','special',comb('\u0305'));
+addStyle('ডাবল আন্ডারলাইন','special',comb('\u0333'));
+addStyle('ডটেড টপ','special',comb('\u0307'));
+addStyle('স্ল্যাশড','special',comb('\u0337'));
+addStyle('টিলডে','special',comb('\u0303'));
+addStyle('অ্যারো টপ','special',comb('\u20D7'));
+addStyle('এসথেটিক ওয়াইড','special',t=>[...tr(t,M.mono)].join(' '));
+addStyle('স্পেসড — Spaced','special',jw(' '));
+
+/* ---- ডেকোরেশন (বাংলা ✅) ---- */
+[['রয়্যাল কিং','꧁༒','༒꧂'],
+ ['রয়্যাল','꧁','꧂'],
+ ['শুটিং স্টার','★彡','彡★'],
+ ['নিঞ্জা স্টার','ミ★','★ミ'],
+ ['ডেমন','༺','༻'],
+ ['রাজা ক্রাউন','♛ ',' ♛'],
+ ['লাভ ❤️','❤️ ',' ❤️'],
+ ['হার্ট ♡','♡ ',' ♡'],
+ ['স্পার্কল','⋆｡˚','˚｡⋆'],
+ ['গ্লিটার','✧･ﾟ','･ﾟ✧'],
+ ['রেট্রো ওয়েভ','˜”*°•.','.•°*”˜'],
+ ['ব্লক বর্ডার','▄▀▄▀ ',' ▀▄▀▄'],
+ ['জাপানি বক্স','【','】'],
+ ['জাপানি রাউন্ড','『','』'],
+ ['অ্যাঙ্গেল ব্র্যাকেট','❰','❱'],
+ ['গথিক ক্রস','✞ ',' ✞'],
+ ['শিল্ড ক্রস','✠ ',' ✠'],
+ ['লাইটনিং ⚡','⚡ ',' ⚡'],
+ ['রিবন 🎀','🎀 ',' 🎀'],
+ ['ফ্লাওয়ার ✿','✿ ',' ✿'],
+ ['রোজ ღ','ღ ',' ღ'],
+ ['মিউজিক বার','ılılılı ',' ılılılı'],
+ ['ফ্লাওয়ার চেইন','◦•●◉✿ ',' ✿◉●•◦'],
+ ['কাপল অ্যারো','➳♥ ',' ♥➳'],
+ ['স্ক্রল অ্যারো','ˏˋ°•*⁀➷ ',''],
+ ['স্টার ডাস্ট','⊹˚₊ ',' ₊˚⊹'],
+ ['বাংলা রয়্যাল','༆','࿐'],
+ ['গেমার প্রো','xX_','_Xx'],
+ ['ফাইটার 乂','乂 ',' 乂'],
+ ['ব্লেজ 亗','亗 ',' 亗'],
+ ['ফ্রি-ফায়ার স্পেশাল','᭄✿','᭄'],
+ ['ফ্রি-ফায়ার ২','ᨳ᭬','᭟ᨳ'],
+ ['সুইট হার্ট',"-`ღ´- ",''],
+ ['শেডো','░▒▓ ',' ▓▒░'],
+ ['স্পেড ♤','♤ ',' ♤'],
+ ['অ্যারো উইং','➶➶➶ ',' ➷➷➷'],
+ ['কার্লি ব্র্যাকেট','•?((¯°·._.• ',' •._.·°¯))؟•'],
+ ['স্টার ✰','✰ ',' ✰'],
+ ['মুন ☾','☾ ',' ☽'],
+ ['ফায়ার 🔥','🔥 ',' 🔥']
+].forEach(([n,p,s])=>addStyle(n,'deco',wrap(p,s)));
+
+/* ---- সিম্বল জয়েন (বাংলা ✅) ---- */
+[['ডায়মন্ড জয়েন','✦'],['স্টার জয়েন','★'],['হার্ট জয়েন','♥'],['ক্রাউন জয়েন','♛'],
+ ['অ্যারো জয়েন','❥'],['ফ্লাওয়ার জয়েন','✿'],['বোল্ট জয়েন','⚡'],['মিউজিক জয়েন','♪'],
+ ['স্পার্কল জয়েন','⊹'],['ফাইটার জয়েন','乂'],['ফ্রি-ফায়ার জয়েন','᭄'],['গ্লিটার জয়েন','☆'],
+ ['স্টার ২ জয়েন','✰'],['ডার্ট জয়েন','➻'],['লিলি জয়েন','ღ'],['রয়্যাল জয়েন','༒'],
+ ['ফ্লেউর জয়েন','⚜'],['গেমার জয়েন','×͜×'],['ক্রস জয়েন','✞'],['ব্লেজ জয়েন','亗']
+].forEach(([n,s])=>addStyle(n,'join',jw(s)));
+
+/* ================================================================
+   copy.js — কপি ফাংশনালিটি + টোস্ট
+   ================================================================ */
+function copyText(t){
+  if(navigator.clipboard && window.isSecureContext) return navigator.clipboard.writeText(t);
+  return new Promise((res,rej)=>{
+    const ta=document.createElement('textarea');
+    ta.value=t; ta.style.cssText='position:fixed;opacity:0';
+    document.body.appendChild(ta); ta.select();
+    try{document.execCommand('copy');res();}catch(e){rej(e);}
+    ta.remove();
+  });
+}
+let toastTimer;
+function toast(msg){
+  const el=document.getElementById('toast');
+  el.textContent=msg; el.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer=setTimeout(()=>el.classList.remove('show'),2200);
+}
+
+/* ================================================================
+   main.js — মূল লজিক: ইনপুট → রেন্ডার → ফিল্টার → ফেভারিট
+   ================================================================ */
+const $=id=>document.getElementById(id);
+const inputEl=$('nameInput'), resultsEl=$('results'), countEl=$('countLabel'),
+      loadBtn=$('loadMoreBtn'), searchEl=$('searchInput');
+
+const bnNum=n=>String(n).replace(/\d/g,d=>'০১২৩৪৫৬৭৮৯'[d]);
+const currentText=()=>inputEl.value.trim()||'Your Name';
+
+let cat='all', shown=24, favs=new Set(JSON.parse(localStorage.getItem('stylishNameFavs')||'[]'));
+const saveFavs=()=>localStorage.setItem('stylishNameFavs',JSON.stringify([...favs]));
+
+function createCard(style,text){
+  const out=style.g(text);
+  const card=document.createElement('div'); card.className='card';
+  const prev=document.createElement('div'); prev.className='preview'; prev.textContent=out; prev.title='ট্যাপ করে সিলেক্ট করতে পারেন';
+  const foot=document.createElement('div'); foot.className='card-foot';
+  const name=document.createElement('span'); name.className='style-name';
+  name.textContent=style.n;
+  if(style.cat==='deco'||style.cat==='join'){const t=document.createElement('span');t.className='tag-bn';t.textContent='বাংলা ✓';name.appendChild(t);}
+  const btns=document.createElement('span'); btns.style.cssText='display:flex;align-items:center;gap:8px';
+  const copyB=document.createElement('button'); copyB.className='copy-btn'; copyB.textContent='📋 কপি';
+  copyB.addEventListener('click',()=>{
+    copyText(out).then(()=>{
+      copyB.textContent='✓ কপি হয়েছে'; copyB.classList.add('copied');
+      toast('✅ কপি হয়েছে! এখন যেকোনো জায়গায় পেস্ট করুন');
+      setTimeout(()=>{copyB.textContent='📋 কপি';copyB.classList.remove('copied');},1600);
+    }).catch(()=>toast('❌ কপি করা যায়নি, ম্যানুয়ালি সিলেক্ট করুন'));
+  });
+  const favB=document.createElement('button');
+  favB.className='fav-btn'+(favs.has(style.id)?' active':''); favB.textContent=favs.has(style.id)?'♥':'♡';
+  favB.title='প্রিয়তে সেভ করুন';
+  favB.addEventListener('click',()=>{
+    if(favs.has(style.id)){favs.delete(style.id);favB.textContent='♡';favB.classList.remove('active');}
+    else{favs.add(style.id);favB.textContent='♥';favB.classList.add('active');toast('⭐ প্রিয় তালিকায় সেভ হয়েছে');}
+    saveFavs();
+    if(cat==='fav') render();
+  });
+  btns.appendChild(copyB); btns.appendChild(favB);
+  foot.appendChild(name); foot.appendChild(btns);
+  card.appendChild(prev); card.appendChild(foot);
+  return card;
+}
+
+function render(){
+  const q=searchEl.value.trim().toLowerCase();
+  let list=STYLES.filter(s=>{
+    if(cat==='fav' && !favs.has(s.id)) return false;
+    if(cat!=='all' && cat!=='fav' && s.cat!==cat) return false;
+    if(q && !s.n.toLowerCase().includes(q)) return false;
+    return true;
+  });
+  countEl.textContent = favs.size>0 ? `মোট ${bnNum(list.length)}টি স্টাইল • ⭐ প্রিয় ${bnNum(favs.size)}টি সেভ করা আছে` : `মোট ${bnNum(list.length)}টি স্টাইল পাওয়া গেছে`;
+  resultsEl.innerHTML='';
+  if(!list.length){
+    const e=document.createElement('div'); e.className='empty-state';
+    e.innerHTML = cat==='fav' ? '⭐ এখনো কোনো প্রিয় স্টাইল সেভ করেননি।<br>যেকোনো স্টাইলের হার্ট ♡ বাটনে ক্লিক করুন।' : '😕 কোনো স্টাইল পাওয়া যায়নি — অন্য কিওয়ার্ড দিয়ে সার্চ করুন।';
+    resultsEl.appendChild(e); loadBtn.style.display='none'; return;
+  }
+  list.slice(0,shown).forEach(s=>resultsEl.appendChild(createCard(s,currentText())));
+  loadBtn.style.display = list.length>shown ? 'inline-flex' : 'none';
+}
+
+/* ---------- ইভেন্ট ---------- */
+let deb;
+inputEl.addEventListener('input',()=>{
+  $('charCount').textContent=bnNum(inputEl.value.length);
+  $('clearBtn').style.display=inputEl.value?'grid':'none';
+  clearTimeout(deb); deb=setTimeout(render,220);
+});
+$('clearBtn').addEventListener('click',()=>{inputEl.value='';inputEl.dispatchEvent(new Event('input'));inputEl.focus();});
+$('genBtn').addEventListener('click',()=>{render();document.getElementById('styles').scrollIntoView({behavior:'smooth'});});
+$('randomBtn').addEventListener('click',()=>{
+  const s=STYLES[Math.floor(Math.random()*STYLES.length)];
+  copyText(s.g(currentText())).then(()=>toast('🎲 র‍্যান্ডম কপি: '+s.n)).catch(()=>toast('❌ কপি ব্যর্থ হয়েছে'));
+});
+document.querySelectorAll('#chips .chip').forEach(c=>c.addEventListener('click',()=>{
+  inputEl.value=c.textContent; inputEl.dispatchEvent(new Event('input'));
+}));
+document.querySelectorAll('#tabs .tab').forEach(t=>t.addEventListener('click',()=>{
+  document.querySelectorAll('#tabs .tab').forEach(x=>x.classList.remove('active'));
+  t.classList.add('active'); cat=t.dataset.cat; shown=24; render();
+}));
+searchEl.addEventListener('input',()=>{shown=24;render();});
+loadBtn.addEventListener('click',()=>{shown+=24;render();});
+
+/* ---------- থিম টগল ---------- */
+const themeBtn=$('themeToggle');
+function applyTheme(th){
+  document.documentElement.setAttribute('data-theme',th);
+  themeBtn.textContent = th==='dark'?'☀️':'🌙';
+  localStorage.setItem('stylishNameTheme',th);
+}
+themeBtn.addEventListener('click',()=>{
+  applyTheme(document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark');
+});
+applyTheme(localStorage.getItem('stylishNameTheme')||'dark');
+
+/* ---------- মোবাইল মেনু ---------- */
+$('menuBtn').addEventListener('click',()=>$('navLinks').classList.toggle('open'));
+document.querySelectorAll('#navLinks a').forEach(a=>a.addEventListener('click',()=>$('navLinks').classList.remove('open')));
+
+/* ---------- স্ক্রল রিভিল ---------- */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target);}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+/* ---------- ইনিশিয়ালাইজ ---------- */
+$('year').textContent=new Date().getFullYear();
+render();
+</script>
+</body>
 </html>
