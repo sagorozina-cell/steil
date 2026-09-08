@@ -4,16 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- ===== Primary SEO ===== -->
   <title>Stylish Name Generator - Create Fancy Names & Symbols | Free</title>
   <meta name="description" content="Generate hundreds of stylish names, fancy fonts and symbol decorations from any text in one click. Unique names for Free Fire, PUBG, Facebook, Instagram — 100% free.">
   <meta name="keywords" content="stylish name generator, fancy text, nickname maker, cool fonts, free fire name, pubg name, unicode symbols, text decorator">
   <meta name="robots" content="index, follow">
   <meta name="author" content="Stylish Name">
-  <meta name="theme-color" content="#6c5ce7">
+  <meta name="theme-color" content="#16324f">
   <link rel="canonical" href="https://sagorozina-cell.github.io/steil/">
 
-  <!-- ===== Open Graph ===== -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Stylish Name">
   <meta property="og:title" content="Stylish Name Generator - Create Fancy Names & Symbols | Free">
@@ -22,18 +20,15 @@
   <meta property="og:image" content="https://sagorozina-cell.github.io/steil/assets/images/og-image.png">
   <meta property="og:locale" content="en_US">
 
-  <!-- ===== Twitter Card ===== -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Stylish Name Generator - Create Fancy Names & Symbols | Free">
   <meta name="twitter:description" content="Generate hundreds of stylish names with fancy fonts and symbol decorations in one click.">
   <meta name="twitter:image" content="https://sagorozina-cell.github.io/steil/assets/images/og-image.png">
 
-  <!-- ===== Icons & CSS ===== -->
   <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/responsive.css">
 
-  <!-- ===== Structured Data (SEO) ===== -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -62,9 +57,9 @@
 
 <body>
 
-  <!-- ===== Header ===== -->
+  <!-- ===== Header (navy) ===== -->
   <header class="site-header">
-    <div class="container header-inner">
+    <div class="container-wide header-inner">
       <a href="index.html" class="logo" aria-label="Stylish Name home">✦ Stylish Name</a>
       <nav class="site-nav" aria-label="Main navigation">
         <a href="index.html" class="active">Home</a>
@@ -74,113 +69,135 @@
     </div>
   </header>
 
-  <!-- Google Translate (site-bar) — runs in background, visitor can translate -->
-  <div id="google_translate_element" class="translate-bar"></div>
+  <!-- ===== Layout: Sidebar (site-bar) + Main ===== -->
+  <div class="layout">
 
-  <main>
-    <!-- ===== Hero ===== -->
-    <section class="hero">
-      <div class="container">
+    <!-- ===== SIDEBAR / SITE-BAR (nickfinder-এর মতো) ===== -->
+    <aside class="sidebar" aria-label="Site bar">
+      <div class="side-block">
+        <h3>Interface Language</h3>
+        <div class="lang-grid">
+          <a href="#" data-lang="en" class="active" onclick="doGTranslate('en|en');return false;">EN</a>
+          <a href="#" data-lang="bn" onclick="doGTranslate('en|bn');return false;">BN</a>
+          <a href="#" data-lang="hi" onclick="doGTranslate('en|hi');return false;">HI</a>
+          <a href="#" data-lang="es" onclick="doGTranslate('en|es');return false;">ES</a>
+          <a href="#" data-lang="fr" onclick="doGTranslate('en|fr');return false;">FR</a>
+          <a href="#" data-lang="de" onclick="doGTranslate('en|de');return false;">DE</a>
+          <a href="#" data-lang="it" onclick="doGTranslate('en|it');return false;">IT</a>
+          <a href="#" data-lang="ru" onclick="doGTranslate('en|ru');return false;">RU</a>
+          <a href="#" data-lang="id" onclick="doGTranslate('en|id');return false;">ID</a>
+          <a href="#" data-lang="ja" onclick="doGTranslate('en|ja');return false;">JP</a>
+          <a href="#" data-lang="ko" onclick="doGTranslate('en|ko');return false;">KR</a>
+          <a href="#" data-lang="pt" onclick="doGTranslate('en|pt');return false;">BR</a>
+          <a href="#" data-lang="tr" onclick="doGTranslate('en|tr');return false;">TR</a>
+          <a href="#" data-lang="ar" onclick="doGTranslate('en|ar');return false;">AR</a>
+          <a href="#" data-lang="zh-CN" onclick="doGTranslate('en|zh-CN');return false;">CN</a>
+        </div>
+      </div>
+
+      <div class="side-block">
+        <h3>Site Menu</h3>
+        <div class="side-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact</a>
+          <a href="policies/privacy-policy.html">Privacy Policy</a>
+          <a href="policies/terms-and-conditions.html">Terms &amp; Conditions</a>
+        </div>
+      </div>
+
+      <div class="side-block side-ad"><!-- AdSense sidebar unit --></div>
+    </aside>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main class="main-content">
+
+      <section class="hero">
         <h1>Stylish Name Generator — Fancy Fonts &amp; Symbol Designs</h1>
         <p class="tagline">Type your name, instantly see hundreds of unique designs, and copy with one click.</p>
-      </div>
-    </section>
+      </section>
 
-    <!-- Ad slot -->
-    <div class="container ad-slot" data-ad="top"><!-- AdSense unit: top --></div>
+      <div class="ad-slot" data-ad="top"><!-- AdSense unit: top --></div>
 
-    <!-- ===== Tool ===== -->
-    <section class="tool container" id="tool" aria-label="Name generator tool">
-      <label for="nameInput" class="input-label">Enter your name or text:</label>
-      <input
-        type="text"
-        id="nameInput"
-        name="nameInput"
-        placeholder="e.g. Rakib"
-        maxlength="40"
-        autocomplete="off"
-        autofocus>
+      <section class="tool" id="tool" aria-label="Name generator tool">
+        <label for="nameInput" class="input-label">Enter your name or text:</label>
+        <input type="text" id="nameInput" name="nameInput" placeholder="e.g. Rakib" maxlength="40" autocomplete="off" autofocus>
 
-      <div class="tool-controls">
-        <label class="checkbox"><input type="checkbox" id="usePrefix" checked> Symbols at start</label>
-        <label class="checkbox"><input type="checkbox" id="useSuffix" checked> Symbols at end</label>
-        <span class="result-count" id="resultCount"></span>
-      </div>
+        <div class="tool-controls">
+          <label class="checkbox"><input type="checkbox" id="usePrefix" checked> Symbols at start</label>
+          <label class="checkbox"><input type="checkbox" id="useSuffix" checked> Symbols at end</label>
+          <span class="result-count" id="resultCount"></span>
+        </div>
 
-      <!-- Results area — main.js fills this -->
-      <div id="results" class="results" aria-live="polite">
-        <p class="empty-msg">✍️ Type your name above — stylish designs will appear instantly!</p>
-      </div>
+        <div id="results" class="results" aria-live="polite">
+          <p class="empty-msg">✍️ Type your name above — stylish designs will appear instantly!</p>
+        </div>
 
-      <div class="load-area">
-        <button type="button" id="loadMore" class="btn-load" hidden>Load more designs</button>
-      </div>
+        <div class="load-area">
+          <button type="button" id="loadMore" class="btn-load" hidden>Load more designs</button>
+        </div>
 
-      <noscript>
-        <p class="noscript-msg">Please enable JavaScript in your browser to use this tool.</p>
-      </noscript>
-    </section>
+        <noscript><p class="noscript-msg">Please enable JavaScript in your browser to use this tool.</p></noscript>
+      </section>
 
-    <!-- Ad slot -->
-    <div class="container ad-slot" data-ad="middle"><!-- AdSense unit: middle --></div>
+      <div class="ad-slot" data-ad="middle"><!-- AdSense unit: middle --></div>
 
-    <!-- ===== SEO Content ===== -->
-    <section class="content container">
-      <article>
-        <h2>What is a Stylish Name?</h2>
-        <p>A stylish name is the decorated form of plain text using Unicode characters. The Unicode standard contains thousands of special letters, symbols and decoration characters — like 𝓑𝓸𝓵𝓭 𝓢𝓬𝓻𝓲𝓹𝓽, 𝕯𝖔𝖇𝖑𝖊-𝖘𝖙𝖗𝖚𝖈𝖐, Ⓒⓘⓡⓒⓛⓔⓓ or ꧁༒ name ☬꧂. Our generator converts every letter you type into these special characters and adds symbols before and after to create millions of unique combinations.</p>
+      <section class="content">
+        <article>
+          <h2>What is a Stylish Name?</h2>
+          <p>A stylish name is the decorated form of plain text using Unicode characters. The Unicode standard contains thousands of special letters, symbols and decoration characters — like 𝓑𝓸𝓵𝓭 𝓢𝓬𝓻𝓲𝓹𝓽, 𝕯𝖔𝖇𝖑𝖊-𝖘𝖙𝖗𝖚𝖈𝖐, Ⓒⓡⓒⓔⓓ or ꧁༒ name ☬꧂. Our generator converts every letter you type into these special characters and adds symbols before and after to create millions of unique combinations.</p>
 
-        <h2>How to Use?</h2>
-        <ol>
-          <li>Type your name or any text in the box above.</li>
-          <li>A list of designs appears instantly below — scroll to load more.</li>
-          <li>Click the <strong>Copy</strong> button next to your favourite design.</li>
-          <li>Paste it into your game, social media or bio — done!</li>
-        </ol>
+          <h2>How to Use?</h2>
+          <ol>
+            <li>Type your name or any text in the box above.</li>
+            <li>A list of designs appears instantly below — scroll to load more.</li>
+            <li>Click the <strong>Copy</strong> button next to your favourite design.</li>
+            <li>Paste it into your game, social media or bio — done!</li>
+          </ol>
 
-        <h2>Where Can You Use It?</h2>
-        <ul>
-          <li>Game names and guild tags — Free Fire, PUBG, Call of Duty Mobile</li>
-          <li>Facebook, Instagram, WhatsApp, TikTok profiles and bios</li>
-          <li>Discord and Telegram usernames and chats</li>
-          <li>Event posters, invitations and creative designs</li>
-        </ul>
+          <h2>Where Can You Use It?</h2>
+          <ul>
+            <li>Game names and guild tags — Free Fire, PUBG, Call of Duty Mobile</li>
+            <li>Facebook, Instagram, WhatsApp, TikTok profiles and bios</li>
+            <li>Discord and Telegram usernames and chats</li>
+            <li>Event posters, invitations and creative designs</li>
+          </ul>
 
-        <h2>Features</h2>
-        <ul>
-          <li>Millions of unique combinations (font × prefix × suffix)</li>
-          <li>One-click copy with confirmation notification</li>
-          <li>Infinite scroll — your browser never slows down</li>
-          <li>Fully responsive on mobile and desktop</li>
-          <li>No sign-up, no limits — 100% free forever</li>
-          <li>Translate this page into your own language using the bar above</li>
-        </ul>
+          <h2>Features</h2>
+          <ul>
+            <li>Millions of unique combinations (font × prefix × suffix)</li>
+            <li>One-click copy with confirmation notification</li>
+            <li>Infinite scroll — your browser never slows down</li>
+            <li>Switch interface language from the side bar — fully automatic</li>
+            <li>Fully responsive on mobile and desktop</li>
+            <li>No sign-up, no limits — 100% free forever</li>
+          </ul>
 
-        <h2>Frequently Asked Questions</h2>
-        <details>
-          <summary>Do stylish names work in every game and app?</summary>
-          <p>Most modern apps and games support Unicode symbols. However, some older platforms may not display certain symbols — in that case, choose a different design.</p>
-        </details>
-        <details>
-          <summary>Is my text stored anywhere?</summary>
-          <p>No. All processing happens right in your browser. We never collect or store any text you type.</p>
-        </details>
-        <details>
-          <summary>How much does it cost?</summary>
-          <p>Completely free. Use it as many times as you like — no charges, no subscription.</p>
-        </details>
-      </article>
-    </section>
-  </main>
+          <h2>Frequently Asked Questions</h2>
+          <details>
+            <summary>Do stylish names work in every game and app?</summary>
+            <p>Most modern apps and games support Unicode symbols. However, some older platforms may not display certain symbols — in that case, choose a different design.</p>
+          </details>
+          <details>
+            <summary>Is my text stored anywhere?</summary>
+            <p>No. All processing happens right in your browser. We never collect or store any text you type.</p>
+          </details>
+          <details>
+            <summary>How much does it cost?</summary>
+            <p>Completely free. Use it as many times as you like — no charges, no subscription.</p>
+          </details>
+        </article>
+      </section>
+    </main>
+  </div>
 
-  <!-- ===== Modern Footer ===== -->
+  <!-- ===== Modern Footer (navy) ===== -->
   <footer class="site-footer">
-    <div class="container footer-inner">
+    <div class="container-wide footer-inner">
       <div class="footer-brand">
         <span class="footer-logo">✦ Stylish Name</span>
         <p class="footer-tagline">Create unique fancy names &amp; symbols — free forever.</p>
       </div>
-
       <div class="footer-columns">
         <div class="footer-col">
           <h4>Pages</h4>
@@ -196,32 +213,46 @@
           <a href="policies/cookie-policy.html">Cookie Policy</a>
         </div>
       </div>
-
       <div class="footer-bottom">
         <p class="copyright">© 2026 Stylish Name Generator. All rights reserved.</p>
       </div>
     </div>
   </footer>
 
-  <!-- Copy toast -->
   <div id="copyToast" class="copy-toast" role="status" aria-live="polite">Copied! ✔</div>
 
-  <!-- ===== Scripts ===== -->
-  <script src="assets/js/main.js" defer></script>
-  <script src="assets/js/copy.js" defer></script>
+  <!-- ===== Hidden Google Translate (background-এ কাজ করবে, দেখাবে না) ===== -->
+  <div id="google_translate_element"></div>
 
-  <!-- Google Translate (background site-bar) -->
   <script type="text/javascript">
     function googleTranslateElementInit() {
       new google.translate.TranslateElement({
         pageLanguage: 'en',
-        includedLanguages: 'en,bn,hi,es,fr,ar,id,pt,ru,ja,ko,zh-CN',
-        layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
         autoDisplay: false
       }, 'google_translate_element');
     }
+    /* সাইডবারের ভাষা-কোড ক্লিক করলে ব্যাকগ্রাউন্ডে অনুবাদ */
+    function doGTranslate(pair) {
+      var lang = pair.split('|')[1];
+      var tries = 0;
+      (function apply() {
+        var combo = document.querySelector('.goog-te-combo');
+        if (combo) {
+          combo.value = lang;
+          combo.dispatchEvent(new Event('change'));
+        } else if (tries++ < 20) {
+          setTimeout(apply, 250);
+        }
+      })();
+      document.querySelectorAll('.lang-grid a').forEach(function (a) { a.classList.remove('active'); });
+      var el = document.querySelector('.lang-grid a[data-lang="' + lang + '"]');
+      if (el) el.classList.add('active');
+    }
   </script>
   <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer></script>
+
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/copy.js" defer></script>
 
   <!-- AdSense (add after approval):
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
