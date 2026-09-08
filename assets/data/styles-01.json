@@ -209,6 +209,160 @@
         "a": "ᵃ", "b": "ᵇ", "c": "ᶜ", "d": "ᵈ", "e": "ᵉ", "f": "ᶠ", "g": "ᵍ", "h": "ʰ", "i": "ⁱ", "j": "ʲ", "k": "ᵏ", "l": "ˡ", "m": "ᵐ", "n": "ⁿ", "o": "ᵒ", "p": "ᵖ", "q": "ᑫ", "r": "ʳ", "s": "ˢ", "t": "ᵗ", "u": "ᵘ", "v": "ᵛ", "w": "ʷ", "x": "ˣ", "y": "ʸ", "z": "ᶻ",
         "0": "⁰", "1": "¹", "2": "²", "3": "³", "4": "⁴", "5": "⁵", "6": "⁶", "7": "⁷", "8": "⁸", "9": "⁹"
       }
+    },
+        {
+      "id": 21,
+      "name": "Subscript",
+      "bn": "সাবস্ক্রিপ্ট",
+      "type": "map",
+      "map": {
+        "a": "ₐ", "e": "ₑ", "h": "ₕ", "i": "ᵢ", "j": "ⱼ", "k": "ₖ", "l": "ₗ", "m": "ₘ", "n": "ₙ", "o": "ₒ", "p": "ₚ", "r": "ᵣ", "s": "ₛ", "t": "ₜ", "u": "ᵤ", "v": "ᵥ", "x": "ₓ",
+        "0": "₀", "1": "₁", "2": "₂", "3": "₃", "4": "₄", "5": "₅", "6": "₆", "7": "₇", "8": "₈", "9": "₉"
+      }
+    },
+    {
+      "id": 22,
+      "name": "Strikethrough",
+      "bn": "স্ট্রাইকথ্রু",
+      "type": "combine",
+      "char": "\u0336"
+    },
+    {
+      "id": 23,
+      "name": "Underline",
+      "bn": "আন্ডারলাইন",
+      "type": "combine",
+      "char": "\u0332"
+    },
+    {
+      "id": 24,
+      "name": "Slash",
+      "bn": "স্ল্যাশ",
+      "type": "combine",
+      "char": "\u0338"
+    },
+    {
+      "id": 25,
+      "name": "Tilde Wave",
+      "bn": "টিল্ড ওয়েভ",
+      "type": "combine",
+      "char": "\u0334"
+    },
+    {
+      "id": 26,
+      "name": "Double Underline",
+      "bn": "ডাবল আন্ডারলাইন",
+      "type": "combine",
+      "char": "\u0333"
+    },
+    {
+      "id": 27,
+      "name": "Overline",
+      "bn": "ওভারলাইন",
+      "type": "combine",
+      "char": "\u0305"
+    },
+    {
+      "id": 28,
+      "name": "Royal Wings",
+      "bn": "রয়্যাল উইংস",
+      "type": "wrapper",
+      "prefix": "꧁༒☬ ",
+      "suffix": " ☬༒꧂"
+    },
+    {
+      "id": 29,
+      "name": "Crown King",
+      "bn": "ক্রাউন কিং",
+      "type": "wrapper",
+      "prefix": "꧁♛ ",
+      "suffix": " ♛꧂"
+    },
+    {
+      "id": 30,
+      "name": "Lotus Royal",
+      "bn": "লোটাস রয়্যাল",
+      "type": "wrapper",
+      "prefix": "༺ ",
+      "suffix": " ༻"
+    },
+    {
+      "id": 31,
+      "name": "Warrior",
+      "bn": "ওয়ারিয়র",
+      "type": "wrapper",
+      "prefix": "⚔ ",
+      "suffix": " ⚔"
+    },
+    {
+      "id": 32,
+      "name": "Butterfly",
+      "bn": "বাটারফ্লাই",
+      "type": "wrapper",
+      "prefix": "ʚ ",
+      "suffix": " ɞ"
+    },
+    {
+      "id": 33,
+      "name": "Star Wings",
+      "bn": "স্টার উইংস",
+      "type": "wrapper",
+      "prefix": "★彡 ",
+      "suffix": " 彡★"
+    },
+    {
+      "id": 34,
+      "name": "Heart",
+      "bn": "হার্ট",
+      "type": "wrapper",
+      "prefix": "♥ ",
+      "suffix": " ♥"
+    },
+    {
+      "id": 35,
+      "name": "Classic Shadow",
+      "bn": "ক্লাসিক শ্যাডো",
+      "type": "wrapper",
+      "prefix": "(¯`·._.·( ",
+      "suffix": " )·._.·´¯)"
+    },
+    {
+      "id": 36,
+      "name": "Japanese Dots",
+      "bn": "জাপানি ডট",
+      "type": "join",
+      "separator": "・"
+    },
+    {
+      "id": 37,
+      "name": "Sparkle",
+      "bn": "স্পার্কল",
+      "type": "join",
+      "separator": " ✦ "
+    },
+    {
+      "id": 38,
+      "name": "Square Brackets",
+      "bn": "স্কয়ার ব্র্যাকেট",
+      "type": "each",
+      "prefix": "【",
+      "suffix": "】"
+    },
+    {
+      "id": 39,
+      "name": "Paren Style",
+      "bn": "প্যারেন স্টাইল",
+      "type": "each",
+      "prefix": "(",
+      "suffix": ")"
+    },
+    {
+      "id": 40,
+      "name": "Block Shadow",
+      "bn": "ব্লক শ্যাডো",
+      "type": "wrapper",
+      "prefix": "▁▂▃▄▅▆▇█ ",
+      "suffix": " █▇▆▅▄▃▂▁"
     }
   ]
 }
