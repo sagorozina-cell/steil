@@ -1,1 +1,3 @@
-
+# Steil - Stylish Name Generator
+# AdSense approval-এর পর নিচের লাইনে আপনার Publisher ID বসান:
+# google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
