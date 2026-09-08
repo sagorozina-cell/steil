@@ -1,1 +1,4 @@
+User-agent: *
+Allow: /
 
+Sitemap: https://sagorozina-cell.github.io/steil/sitemap.xml
