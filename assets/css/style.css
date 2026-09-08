@@ -1,8 +1,8 @@
 /* =========================================================
-   Steil — Stylish Name Generator | style.css
+   Stylish Name Generator | style.css (updated)
    ========================================================= */
 
-/* ---------- CSS Variables (Theme) ---------- */
+/* ---------- Theme Variables ---------- */
 :root {
   --primary: #6c5ce7;
   --primary-dark: #5849c2;
@@ -23,7 +23,6 @@
 
 /* ---------- Reset & Base ---------- */
 * { margin: 0; padding: 0; box-sizing: border-box; }
-
 html { scroll-behavior: smooth; }
 
 body {
@@ -32,6 +31,10 @@ body {
   color: var(--text);
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
+  /* লেখা কখনো কাটছাঁট হবে না — সুন্দরভাবে wrap হবে */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
 }
 
 .container {
@@ -44,11 +47,32 @@ body {
 a { color: var(--primary); text-decoration: none; transition: color .2s; }
 a:hover { color: var(--primary-dark); }
 
-h1, h2, h3 { line-height: 1.3; color: var(--text); }
+h1, h2, h3 { line-height: 1.35; color: var(--text); overflow-wrap: break-word; }
 h2 { font-size: 1.5rem; margin: 2rem 0 1rem; }
 
 ul, ol { padding-left: 1.4rem; margin-bottom: 1rem; }
 li { margin-bottom: .5rem; }
+
+p { overflow-wrap: break-word; word-break: normal; }
+
+/* ---------- Google Translate Bar ---------- */
+.translate-bar {
+  background: var(--card-bg);
+  border-bottom: 1px solid var(--border);
+  text-align: right;
+  padding: 6px 20px;
+  min-height: 40px;
+}
+.translate-bar .goog-te-gadget { font-size: 13px; color: var(--text-light); }
+.translate-bar .goog-te-gadget-simple {
+  background: var(--bg) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 6px !important;
+  padding: 4px 10px !important;
+}
+/* Google-এর ডিফল্ট top-bar লুকানো (শুধু আমাদের সাইট-বার থাকবে) */
+body > .skiptranslate { display: none !important; }
+body { top: 0 !important; }
 
 /* ---------- Header ---------- */
 .site-header {
@@ -69,16 +93,17 @@ li { margin-bottom: .5rem; }
   font-size: 1.4rem;
   font-weight: 800;
   color: var(--primary);
-  letter-spacing: .5px;
+  letter-spacing: .3px;
+  white-space: nowrap;
 }
 .site-nav { display: flex; gap: 22px; }
 .site-nav a {
   color: var(--text-light);
   font-weight: 500;
   font-size: .95rem;
+  white-space: nowrap;
 }
-.site-nav a.active,
-.site-nav a:hover { color: var(--primary); }
+.site-nav a.active, .site-nav a:hover { color: var(--primary); }
 
 /* ---------- Hero ---------- */
 .hero {
@@ -92,12 +117,17 @@ li { margin-bottom: .5rem; }
   font-size: clamp(1.5rem, 4vw, 2.3rem);
   font-weight: 800;
   margin-bottom: 12px;
+  /* হিরোর বড় লেখাও সুন্দরভাবে wrap হবে, কাটবে না */
+  overflow-wrap: break-word;
+  word-break: normal;
+  hyphens: auto;
 }
 .tagline {
   font-size: 1.05rem;
   opacity: .92;
-  max-width: 600px;
+  max-width: 620px;
   margin: 0 auto;
+  overflow-wrap: break-word;
 }
 
 /* ---------- Tool Section ---------- */
@@ -181,9 +211,13 @@ li { margin-bottom: .5rem; }
 .result-text {
   flex: 1;
   font-size: 1.2rem;
+  /* গুরুত্বপূর্ণ: ডিজাইন টেক্সট কাটবে না, সুন্দরভাবে wrap হবে */
+  overflow-wrap: anywhere;
   word-break: break-word;
+  white-space: normal;
   color: var(--text);
   min-width: 0;
+  line-height: 1.6;
 }
 .btn-copy {
   flex-shrink: 0;
@@ -197,6 +231,7 @@ li { margin-bottom: .5rem; }
   font-family: var(--font);
   cursor: pointer;
   transition: background .2s, transform .1s;
+  white-space: nowrap;
 }
 .btn-copy:hover { background: var(--primary-dark); }
 .btn-copy:active { transform: scale(.95); }
@@ -270,30 +305,68 @@ details p { margin: 10px 0 0; }
   text-align: center;
 }
 
-/* ---------- Footer ---------- */
+/* ---------- Modern Footer ---------- */
 .site-footer {
-  background: var(--card-bg);
-  border-top: 1px solid var(--border);
-  padding: 28px 0;
+  background: linear-gradient(135deg, #2d3436 0%, #3a3f47 100%);
+  color: #cfd6e0;
+  padding: 44px 0 24px;
   margin-top: 20px;
 }
-.footer-inner { text-align: center; }
-.footer-nav {
+.footer-inner {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 8px 20px;
-  margin-bottom: 14px;
+  gap: 30px;
+  justify-content: space-between;
+  align-items: flex-start;
 }
-.footer-nav a {
-  color: var(--text-light);
+.footer-brand { flex: 1 1 240px; }
+.footer-logo {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #fff;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+.footer-tagline {
   font-size: .9rem;
+  color: #aeb6c2;
+  max-width: 280px;
+  line-height: 1.6;
 }
-.footer-nav a:hover { color: var(--primary); }
-.copyright {
-  font-size: .85rem;
-  color: var(--text-light);
+.footer-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  flex: 2 1 320px;
+  justify-content: flex-end;
 }
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 140px;
+}
+.footer-col h4 {
+  color: #fff;
+  font-size: .95rem;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+}
+.footer-col a {
+  color: #aeb6c2;
+  font-size: .9rem;
+  transition: color .2s, padding-left .2s;
+}
+.footer-col a:hover { color: #fff; padding-left: 4px; }
+.footer-bottom {
+  width: 100%;
+  border-top: 1px solid rgba(255,255,255,.1);
+  margin-top: 24px;
+  padding-top: 18px;
+  text-align: center;
+}
+.copyright { font-size: .85rem; color: #8a93a0; }
 
 /* ---------- Copy Toast ---------- */
 .copy-toast {
