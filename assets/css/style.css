@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Stylish Name Generator - Main Stylesheet
+   Stylish Name Generator - Pure CSS Stylesheet
    ========================================================================== */
 
 :root {
@@ -65,7 +65,7 @@ body {
   text-align: center;
 }
 
-/* Navbar */
+/* Header & Navbar */
 .navbar {
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(12px);
@@ -351,7 +351,7 @@ body {
   border-color: #0f172a;
 }
 
-/* Results Grid */
+/* Results Section */
 .section-header {
   display: flex;
   align-items: center;
@@ -465,7 +465,7 @@ body {
   border-color: #0284c7;
 }
 
-/* Workbench Section */
+/* Workbench & Symbols */
 .workbench-section, .symbol-section {
   background: var(--bg-card);
   border: 1px solid var(--border-color);
@@ -548,7 +548,7 @@ body {
   margin-bottom: 0.75rem;
 }
 
-/* Symbol Section & Scratchpad */
+/* Scratchpad */
 .scratchpad-box {
   background: #f8fafc;
   border: 2px dashed #cbd5e1;
@@ -631,7 +631,7 @@ body {
   transform: scale(1.1);
 }
 
-/* Toast Notifications */
+/* Toast Container */
 .toast-container {
   position: fixed;
   bottom: 1.5rem;
@@ -640,16 +640,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-}
-
-.toast {
-  background: #0f172a;
-  color: #ffffff;
-  border-radius: var(--radius-md);
-  padding: 0.75rem 1.25rem;
-  font-size: 0.875rem;
-  font-weight: 600;
-  box-shadow: var(--shadow-lg);
 }
 
 /* Footer */
@@ -692,4 +682,28 @@ body {
   color: var(--text-light);
   border-top: 1px solid #f1f5f9;
   padding-top: 1.25rem;
+}
+
+/* Mobile Responsive */
+@media (max-width: 860px) {
+  .workbench-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-title {
+    font-size: 1.65rem;
+  }
+  .results-grid {
+    grid-template-columns: 1fr;
+  }
+  .nav-text-hide {
+    display: none;
+  }
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
