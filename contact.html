@@ -15,7 +15,7 @@
   <meta property="og:title" content="যোগাযোগ - Steil | Stylish Name Generator">
   <meta property="og:description" content="Steil টুল সম্পর্কে কোনো প্রশ্ন বা পরামর্শ থাকলে আমাদের সাথে যোগাযোগ করুন।">
   <meta property="og:url" content="https://sagorozina-cell.github.io/steil/contact.html">
-  <meta property="og:image" content="https://sagorozina-cell.github.io/steil/assets/images/og-image.png">
+  <meta property="og:image" content="https://sagorozina-cell.github.io/steil/assets/images/og-image.svg">
   <meta property="og:locale" content="bn_BD">
 
   <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
@@ -52,30 +52,29 @@
 
         <h2>যোগাযোগের মাধ্যম</h2>
         <ul>
-          <li>📧 <strong>ইমেইল:</strong> <a href="mailto:support@steil.example.com">support@steil.example.com</a></li>
-          <li>💬 <strong>ফিডব্যাক ফর্ম:</strong> নিচের ফর্মটি পূরণ করে সরাসরি মেসেজ পাঠান</li>
-          <li>🐙 <strong>GitHub:</strong> <a href="https://github.com/sagorozina-cell/steil" target="_blank" rel="noopener">সোর্স কোড ও ইস্যু রিপোর্ট</a></li>
+          <li>💬 <strong>ফিডব্যাক:</strong> GitHub Issues-এ আপনার প্রশ্ন বা বাগ রিপোর্ট পাঠান</li>
+          <li>🐙 <strong>GitHub:</strong> <a href="https://github.com/sagorozina-cell/steil/issues/new" target="_blank" rel="noopener">নতুন ইস্যু খুলুন</a></li>
         </ul>
 
         <h2>মেসেজ পাঠান</h2>
         <p style="color:var(--text-light); font-size:.92rem; margin-bottom:1rem;">
-          ⚠️ এটি একটি স্ট্যাটিক সাইট, তাই এই ফর্মটি সরাসরি ইমেইল পাঠাতে পারে না। ফর্ম সাবমিট করলে আপনার ডিফল্ট ইমেইল অ্যাপ খুলবে। অথবা সরাসরি উপরের ইমেইলে লিখুন।
+          ⚠️ এটি একটি স্ট্যাটিক সাইট। মেসেজ পাঠাতে নিচের ফর্মের বদলে GitHub Issues লিংক ব্যবহার করুন—এতে আপনার রিপোর্টটি ঠিকভাবে ট্র্যাক করা যাবে।
         </p>
 
-        <form class="contact-form" action="mailto:support@steil.example.com" method="POST" enctype="text/plain">
+        <form class="contact-form" id="contactForm" action="https://github.com/sagorozina-cell/steil/issues/new" method="get" target="_blank">
           <div class="form-group">
             <label for="cName">আপনার নাম</label>
-            <input type="text" id="cName" name="name" placeholder="যেমন: রাকিব" required>
+            <input type="text" id="cName" name="name" placeholder="যেমন: রাকিব">
           </div>
           <div class="form-group">
             <label for="cEmail">আপনার ইমেইল</label>
-            <input type="email" id="cEmail" name="email" placeholder="example@mail.com" required>
+            <input type="email" id="cEmail" name="email" placeholder="আপনার ইমেইল (ঐচ্ছিক)">
           </div>
           <div class="form-group">
             <label for="cMsg">আপনার মেসেজ</label>
-            <textarea id="cMsg" name="message" rows="5" placeholder="আপনার প্রশ্ন বা পরামর্শ লিখুন..." required></textarea>
+            <textarea id="cMsg" name="message" rows="5" placeholder="আপনার প্রশ্ন বা পরামর্শ লিখুন..."></textarea>
           </div>
-          <button type="submit" class="btn-load" style="background:var(--primary); color:#fff; border:none;">মেসেজ পাঠান ✉</button>
+          <button type="submit" class="btn-load" style="background:var(--primary); color:#fff; border:none;">GitHub Issues খুলুন ↗</button>
         </form>
 
         <h2 style="margin-top:2rem;">কেন যোগাযোগ করবেন?</h2>
@@ -138,6 +137,7 @@
     }
     .form-group textarea { resize: vertical; min-height: 120px; }
   </style>
+  <script src="assets/js/contact.js" defer></script>
 
 </body>
 </html>
