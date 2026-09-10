@@ -45,7 +45,17 @@
   let dataReady   = false;
   let currentCat  = "all";
   let searchQuery = "";
-  let favorites   = new Set(JSON.parse(localStorage.getItem(FAV_KEY) || "[]"));
+  function readStoredArray(key) {
+    try {
+      const value = JSON.parse(localStorage.getItem(key) || "[]");
+      return Array.isArray(value) ? value : [];
+    } catch (error) {
+      console.warn("Saved preference could not be read:", key, error);
+      return [];
+    }
+  }
+
+  let favorites   = new Set(readStoredArray(FAV_KEY));
 
   /* ---------------- DOM ---------------- */
   const $ = (id) => document.getElementById(id);
@@ -78,6 +88,15 @@
     }
   }
 
+  function inferCategory(style) {
+    if (style.cat) return style.cat;
+    const name = String(style.name || "").toLowerCase();
+    if (style.type === "map") return "font";
+    if (style.type === "wrapper" || /royal|crown|wing|frame|shadow|butterfly|lotus|warrior|sparkle/.test(name)) return "deco";
+    if (style.type === "combine" || style.type === "flip") return "mark";
+    return "symbol";
+  }
+
   async function init() {
     resultsGrid.innerHTML = '<p class="empty-msg">⏳ ডাটা লোড হচ্ছে...</p>';
 
@@ -87,10 +106,13 @@
       loadJSON("suffix-symbols.json")
     ]);
 
-    styles   = (styleData && Array.isArray(styleData.styles)) ? styleData.styles : [];
+    styles   = (styleData && Array.isArray(styleData.styles))
+      ? styleData.styles.map((style) => ({ ...style, cat: inferCategory(style) }))
+      : [];
     prefixes = Array.isArray(pre) ? pre : [];
     suffixes = Array.isArray(suf) ? suf : [];
     dataReady = true;
+    resultsGrid.setAttribute("aria-busy", "false");
 
     buildCategoryTabs();
     updateCounts();
@@ -210,7 +232,11 @@
     return d.innerHTML;
   }
   function escapeAttr(str) {
-    return String(str).replace(/&/g, "&amp;").replace(/"/g, "&quot;");
+    return String(str)
+      .replace(/&/g, "&amp;")
+      .replace(/"/g, "&quot;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;");
   }
 
   function updateLoadMore() {
@@ -240,11 +266,18 @@
   function buildCategoryTabs() {
     document.querySelectorAll(".cat-item").forEach((item) => {
       const cat = item.dataset.cat;
-      item.addEventListener("click", () => {
+      const selectCategory = () => {
         document.querySelectorAll(".cat-item").forEach((i) => i.classList.remove("active"));
         item.classList.add("active");
         currentCat = cat;
         if (dataReady) processInput(getVal());
+      };
+      item.addEventListener("click", selectCategory);
+      item.addEventListener("keydown", (event) => {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          selectCategory();
+        }
       });
     });
   }
@@ -278,12 +311,18 @@
 
   function applyAccent(from, to) {
     const root = document.documentElement.style;
+    root.setProperty("--primary-color", from);
     root.setProperty("--primary", from);
     root.setProperty("--primary-gradient", `linear-gradient(135deg, ${from}, ${to})`);
   }
 
   function restoreAccent() {
-    const saved = JSON.parse(localStorage.getItem(ACCENT_KEY) || "null");
+    let saved = null;
+    try {
+      saved = JSON.parse(localStorage.getItem(ACCENT_KEY) || "null");
+    } catch (error) {
+      console.warn("Saved accent could not be read:", error);
+    }
     if (saved) {
       applyAccent(saved.from, saved.to);
       if (accentWrap) {
@@ -449,7 +488,10 @@
 
   /* ---------------- FAQ Accordion ---------------- */
   document.querySelectorAll(".faq-question").forEach((btn) => {
-    btn.addEventListener("click", () => btn.parentElement.classList.toggle("open"));
+      btn.addEventListener("click", () => {
+        const isOpen = btn.parentElement.classList.toggle("open");
+        btn.setAttribute("aria-expanded", String(isOpen));
+      });
   });
 
   /* ---------------- Footer Year ---------------- */
@@ -459,8 +501,8 @@
   /* ---------------- Boot ---------------- */
   restoreTheme();
   restoreFont();
-  restoreAccent();
   buildAccentSwatches();
+  restoreAccent();
   setupInfiniteScroll();
   init();
 })();
